@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-12-12 08:26:43 by Eclipse SUMO netedit Version 1.19.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+	
+	<!-- ROUTES -->
+	<route id="main_line_traffic" edges="E0 E0.259 E1 E1.200 E2 E3 E3.300" />
+	<route id="on_ramp_traffic_1" edges="E4 E4.79 E4.177 E1 E1.200 E2 E3 E3.300" />
+	<route id="on_ramp_traffic_2" edges="E5 E5.75 E5.187 E2 E3 E3.300" />
+	<route id="on_ramp_traffic_3" edges="E6 E6.82 E6.188 E3 E3.300" />
+	
+	<!-- VEHICLE TYPES -->
+		<!-- MAIN HIGHWAY -->
+			<!-- CARS (car_aggr1 = Least -> car_aggr5 = Most Aggressive) -->
+			<vType id="main_car_aggr1" vClass="passenger" speedFactor="0.80" speedDev="0.08" tau="10.0" impatience="2.0" lcImpatience="1.0"
+				   lcCooperative="4.5" lcStrategic="50" lcSpeedGain="7.0" lcKeepRight="0" lcPushy="0.00" lcSublane="2.0" lcAssertive="0.01"
+				   lcTimeToImpatience="15" lcSigma="1.8" minGapLat="9.0" maxSpeed="33" accel="0.5" decel="3.5">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="main_car_aggr2" vClass="passenger" speedFactor="0.85" speedDev="0.09" tau="9.8" impatience="2.5" lcImpatience="1.5"
+				   lcCooperative="4.2" lcStrategic="40" lcSpeedGain="8.0" lcKeepRight="0" lcPushy="0.01" lcSublane="3.0" lcAssertive="0.05"
+				   lcTimeToImpatience="12" lcSigma="2.0" minGapLat="9.5" maxSpeed="34" accel="0.7" decel="4.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="main_car_aggr3" vClass="passenger" speedFactor="0.90" speedDev="0.10" tau="9.3" impatience="3.0" lcImpatience="2.0"
+				   lcCooperative="4.0" lcStrategic="30" lcSpeedGain="9.0" lcKeepRight="0" lcPushy="0.02" lcSublane="4.0" lcAssertive="0.08"
+				   lcTimeToImpatience="9" lcSigma="2.2" minGapLat="10.0" maxSpeed="39" accel="0.8" decel="4.5">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="main_car_aggr4" vClass="passenger" speedFactor="0.95" speedDev="0.12" tau="8.8" impatience="3.5" lcImpatience="2.5"
+				   lcCooperative="3.8" lcStrategic="20" lcSpeedGain="10.0" lcKeepRight="0" lcPushy="0.03" lcSublane="5.0" lcAssertive="0.10"
+				   lcTimeToImpatience="6" lcSigma="2.4" minGapLat="10.5" maxSpeed="41" accel="1.0" decel="5.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="main_car_aggr5" vClass="passenger" speedFactor="1.00" speedDev="0.15" tau="8.5" impatience="4.0" lcImpatience="3.0"
+				   lcCooperative="3.5" lcStrategic="10" lcSpeedGain="11.0" lcKeepRight="0" lcPushy="0.08" lcSublane="6.0" lcAssertive="0.20"
+				   lcTimeToImpatience="3" lcSigma="2.6" minGapLat="11.0" maxSpeed="44" accel="1.1" decel="5.5">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<!-- MOTORCYCLES (mot_aggr1 = Least -> mot_aggr5 = Most Aggressive) -->
+			<vType id="main_mot_aggr1" vClass="motorcycle" speedFactor="0.80" speedDev="0.08" tau="10.0" impatience="2.0" lcImpatience="1.0"
+				   lcCooperative="4.5" lcStrategic="50" lcSpeedGain="7.0" lcKeepRight="0" lcPushy="0.00" lcSublane="2.0" lcAssertive="0.01"
+				   lcTimeToImpatience="15" lcSigma="1.8" minGapLat="9.0" maxSpeed="33" accel="0.5" decel="3.5">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="main_mot_aggr2" vClass="motorcycle" speedFactor="0.85" speedDev="0.09" tau="9.8" impatience="2.5" lcImpatience="1.5"
+				   lcCooperative="4.2" lcStrategic="40" lcSpeedGain="8.0" lcKeepRight="0" lcPushy="0.01" lcSublane="3.0" lcAssertive="0.05"
+				   lcTimeToImpatience="12" lcSigma="2.0" minGapLat="9.5" maxSpeed="34" accel="0.7" decel="4.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="main_mot_aggr3" vClass="motorcycle" speedFactor="0.90" speedDev="0.10" tau="9.3" impatience="3.0" lcImpatience="2.0"
+				   lcCooperative="4.0" lcStrategic="30" lcSpeedGain="9.0" lcKeepRight="0" lcPushy="0.02" lcSublane="4.0" lcAssertive="0.08"
+				   lcTimeToImpatience="9" lcSigma="2.2" minGapLat="10.0" maxSpeed="39" accel="0.8" decel="4.5">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="main_mot_aggr4" vClass="motorcycle" speedFactor="0.95" speedDev="0.12" tau="8.8" impatience="3.5" lcImpatience="2.5"
+				   lcCooperative="3.8" lcStrategic="20" lcSpeedGain="10.0" lcKeepRight="0" lcPushy="0.03" lcSublane="5.0" lcAssertive="0.10"
+				   lcTimeToImpatience="6" lcSigma="2.4" minGapLat="10.5" maxSpeed="41" accel="1.0" decel="5.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="main_mot_aggr5" vClass="motorcycle" speedFactor="1.00" speedDev="0.15" tau="8.5" impatience="4.0" lcImpatience="3.0"
+				   lcCooperative="3.5" lcStrategic="10" lcSpeedGain="11.0" lcKeepRight="0" lcPushy="0.08" lcSublane="6.0" lcAssertive="0.20"
+				   lcTimeToImpatience="3" lcSigma="2.6" minGapLat="11.0" maxSpeed="44" accel="1.1" decel="5.5">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			
+		<!-- ON RAMPS -->
+			<!-- CARS (car_aggr1 = Least -> car_aggr5 = Most Aggressive) -->
+			<vType id="ramp_car_aggr1" vClass="passenger" speedFactor="0.80" speedDev="0.08" tau="1.5" impatience="2.0" lcImpatience="2.0"
+				   lcCooperative="0.03" lcStrategic="100" lcSpeedGain="7.0" lcKeepRight="0" lcPushy="4.0" lcSublane="2.0" lcAssertive="9.5"
+				   lcTimeToImpatience="5" lcSigma="0.4" minGapLat="0.13" lcOvertakeRight="0.0" maxSpeed="46" accel="4.0" decel="3.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="ramp_car_aggr2" vClass="passenger" speedFactor="0.85" speedDev="0.09" tau="0.9" impatience="2.5" lcImpatience="2.5"
+				   lcCooperative="0.01" lcStrategic="100" lcSpeedGain="8.0" lcKeepRight="0" lcPushy="4.8" lcSublane="3.0" lcAssertive="10.3"
+				   lcTimeToImpatience="5" lcSigma="0.6" minGapLat="0.12" lcOvertakeRight="0.0" maxSpeed="47" accel="4.3" decel="4.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="ramp_car_aggr3" vClass="passenger" speedFactor="0.90" speedDev="0.10" tau="0.8" impatience="3.0" lcImpatience="2.0"
+				   lcCooperative="0.00" lcStrategic="100" lcSpeedGain="9.0" lcKeepRight="0" lcPushy="5.3" lcSublane="4.0" lcAssertive="10.8"
+				   lcTimeToImpatience="5" lcSigma="0.8" minGapLat="0.10" lcOvertakeRight="0.0" maxSpeed="48" accel="4.6" decel="5.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="ramp_car_aggr4" vClass="passenger" speedFactor="0.95" speedDev="0.12" tau="0.6" impatience="3.5" lcImpatience="2.5"
+				   lcCooperative="0.00" lcStrategic="100" lcSpeedGain="10.0" lcKeepRight="0" lcPushy="5.8" lcSublane="5.0" lcAssertive="11.3"
+				   lcTimeToImpatience="5" lcSigma="1.0" minGapLat="0.06" lcOvertakeRight="0.0" maxSpeed="49" accel="4.8" decel="6.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="ramp_car_aggr5" vClass="passenger" speedFactor="1.00" speedDev="0.15" tau="0.4" impatience="4.0" lcImpatience="3.0"
+				   lcCooperative="0.00" lcStrategic="100" lcSpeedGain="11.0" lcKeepRight="0" lcPushy="6.3" lcSublane="6.0" lcAssertive="12.0"
+				   lcTimeToImpatience="3" lcSigma="1.2" minGapLat="0.02" lcOvertakeRight="0.0" maxSpeed="50" accel="5.0" decel="8.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<!-- MOTORCYCLE (mot_aggr1 = Least -> mot_aggr5 = Most Aggressive) -->
+			<vType id="ramp_mot_aggr1" vClass="motorcycle" speedFactor="0.80" speedDev="0.08" tau="1.5" impatience="2.0" lcImpatience="2.0"
+				   lcCooperative="0.03" lcStrategic="100" lcSpeedGain="7.0" lcKeepRight="0" lcPushy="4.0" lcSublane="2.0" lcAssertive="9.5"
+				   lcTimeToImpatience="5" lcSigma="0.4" minGapLat="0.13" lcOvertakeRight="0.0" maxSpeed="46" accel="4.0" decel="3.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="ramp_mot_aggr2" vClass="motorcycle" speedFactor="0.85" speedDev="0.09" tau="0.9" impatience="2.5" lcImpatience="2.5"
+				   lcCooperative="0.01" lcStrategic="100" lcSpeedGain="8.0" lcKeepRight="0" lcPushy="4.8" lcSublane="3.0" lcAssertive="10.3"
+				   lcTimeToImpatience="5" lcSigma="0.6" minGapLat="0.12" lcOvertakeRight="0.0" maxSpeed="47" accel="4.3" decel="4.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="ramp_mot_aggr3" vClass="motorcycle" speedFactor="0.90" speedDev="0.10" tau="0.8" impatience="3.0" lcImpatience="2.0"
+				   lcCooperative="0.00" lcStrategic="100" lcSpeedGain="9.0" lcKeepRight="0" lcPushy="5.3" lcSublane="4.0" lcAssertive="10.8"
+				   lcTimeToImpatience="5" lcSigma="0.8" minGapLat="0.10" lcOvertakeRight="0.0" maxSpeed="48" accel="4.6" decel="5.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="ramp_mot_aggr4" vClass="motorcycle" speedFactor="0.95" speedDev="0.12" tau="0.6" impatience="3.5" lcImpatience="2.5"
+				   lcCooperative="0.00" lcStrategic="100" lcSpeedGain="10.0" lcKeepRight="0" lcPushy="5.8" lcSublane="5.0" lcAssertive="11.3"
+				   lcTimeToImpatience="5" lcSigma="1.0" minGapLat="0.06" lcOvertakeRight="0.0" maxSpeed="49" accel="4.8" decel="6.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+			<vType id="ramp_mot_aggr5" vClass="motorcycle" speedFactor="1.00" speedDev="0.15" tau="0.4" impatience="4.0" lcImpatience="3.0"
+				   lcCooperative="0.00" lcStrategic="100" lcSpeedGain="11.0" lcKeepRight="0" lcPushy="6.3" lcSublane="6.0" lcAssertive="12.0"
+				   lcTimeToImpatience="3" lcSigma="1.2" minGapLat="0.02" lcOvertakeRight="0.0" maxSpeed="50" accel="5.0" decel="8.0">
+				<param key="laneChangeModel" value="SL2015"/>
+			</vType>
+	<vTypeDistribution id="vehicle_mix"
+		vTypes="
+			main_car_aggr1 main_car_aggr2 main_car_aggr3 main_car_aggr4 main_car_aggr5
+			main_mot_aggr1 main_mot_aggr2 main_mot_aggr3 main_mot_aggr4 main_mot_aggr5"
+		probabilities="
+			0.16 0.16 0.16 0.16 0.16
+			0.04 0.04 0.04 0.04 0.04" />
+			
+	<!-- FLOW / DEMAND -->		
+			<!-- 07:50 - 08:10 -->
+		<flow id="flow_0750_main_left_car_1"      type="vehicle_mix" probability="0.20" route="main_line_traffic" begin="0" end="1200" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+		<flow id="ramp_0750_flow_main_left_car_3" type="vehicle_mix" probability="0.02" route="on_ramp_traffic_3" begin="0" end="1200" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+
+			<!-- 08:10 - 08:20 -->
+		<flow id="flow_0810_main_left_car_1"      type="vehicle_mix" probability="0.20" route="main_line_traffic" begin="1200" end="1800" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+		<flow id="ramp_0810_flow_main_left_car_3" type="vehicle_mix" probability="0.12" route="on_ramp_traffic_3" begin="1200" end="1800" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+
+			<!-- 08:20 - 08:30 -->
+		<flow id="flow_0815_main_left_car_1"      type="vehicle_mix" probability="0.20" route="main_line_traffic" begin="1800" end="2400" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+		<flow id="ramp_0815_flow_main_left_car_3" type="vehicle_mix" probability="0.02" route="on_ramp_traffic_3" begin="1800" end="2400" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+	
+			<!-- 08:30 - 08:50 -->
+		<flow id="flow_0830_main_left_car_1"      type="vehicle_mix" probability="0.20" route="main_line_traffic" begin="2400" end="3600" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+		<flow id="ramp_0830_flow_main_left_car_3" type="vehicle_mix" probability="0.02" route="on_ramp_traffic_3" begin="2400" end="3600" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+
+			<!-- 08:50 - 09:00 -->
+		<flow id="flow_0845_main_left_car_1"      type="vehicle_mix" probability="0.20" route="main_line_traffic" begin="3600" end="4200" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+		<flow id="ramp_0845_flow_main_left_car_3" type="vehicle_mix" probability="0.02" route="on_ramp_traffic_3" begin="3600" end="4200" departSpeed="max" departLane="best" insertionChecks="none" departPos="free" > </flow>
+
+</routes>

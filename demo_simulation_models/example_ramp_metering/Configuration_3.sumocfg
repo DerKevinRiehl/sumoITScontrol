@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+	REPRODUCTION SIMULATION - Kevin Riehl (2025)
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+    <!-- SIMULATION SETTINGS -->
+    <time>
+		<!-- Simulation Time is 07:50AM to 09:00AM -->
+        <begin value="0"/> 
+        <end value="4200"/>
+    </time>
+	
+	<!-- INPUT FILES -->
+    <input>
+        <net-file value="Network.net.xml"/>
+        <route-files value="Demand_3.rou.xml"/>
+		<additional-files value="Sensors.add.xml"/>
+    </input>
+	
+	<!-- PROCESSING OPTIONS -->
+    <processing>
+        <step-length value="0.5"/>
+        <time-to-teleport value="-1"/> <!-- Disable Teleportation -->
+    </processing>
+	
+</configuration>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-01-06 14:44:06 by Eclipse SUMO netedit Version 1.19.0
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- Detectors -->
+    <inductionLoop id="e1_0" lane="E1.200_1" pos="764.09" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_1" lane="E1.200_0" pos="764.09" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_11" lane="E2_1" pos="939.88" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_12" lane="E2_0" pos="939.08" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_13" lane="E3_3" pos="146.81" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_14" lane="E3_2" pos="145.82" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_15" lane="E3.300_1" pos="13.50" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_16" lane="E3.300_0" pos="13.50" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_2" lane="E2_1" pos="101.64" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_3" lane="E2_0" pos="101.64" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_4" lane="E0.259_1" pos="674.34" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_5" lane="E0.259_0" pos="675.35" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_6" lane="E1.200_1" pos="6.83" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_7" lane="E1.200_0" pos="7.16" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_8" lane="E1_2" pos="108.60" period="60.00" file="NUL"/>
+    <inductionLoop id="e1_9" lane="E1_1" pos="108.42" period="60.00" file="NUL"/>
+    <laneAreaDetector id="e2_0" lane="E4.79_0" pos="47.21" length="50.00" period="60.00" file="NUL"/>
+    <laneAreaDetector id="e2_1" lane="E6.82_1" pos="52.83" length="50.00" period="60.00" file="NUL"/>
+    <laneAreaDetector id="e2_2" lane="E6.82_0" pos="54.62" length="50.00" period="60.00" file="NUL"/>
+    <laneAreaDetector id="e2_3" lane="E5.75_0" pos="58.79" length="50.00" period="60.00" file="NUL"/>
+    <laneAreaDetector id="e2_4" lane="E1_2" pos="1.04" length="100.00" period="60.00" file="NUL"/>
+    <laneAreaDetector id="e2_5" lane="E1_1" pos="0.77" length="100.00" period="60.00" file="NUL"/>
+</additional>

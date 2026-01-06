@@ -1,0 +1,33 @@
+Different types of on-ramps
+	Version 1: single lane, and has an extra merge lane on the highway for several meters
+	Version 2: single lane, no extra merge lane on the highway, needs to merge directly
+	Version 3: multiple lanes, with extra merge lane on the highway
+	
+Implementation Details:
+
+	Simulation:
+		Start Simulation earlier than intended for warmup period, so that when you count / measure there is already traffic on the highway
+
+	Network:
+		Connection Mode: check conncetions make sense for merging
+		Intersection / Junction type: unregulated (visible through white crossing connections rather than some gray)
+		Mainline: forbid ChangeRight for the mainline lanes intersecting with extra merge lane
+					(visible through orange line)
+		
+		Signals: on-ramp split edge for extra intersection with traffic light
+		Sensors: 
+			Ramp Sensors: laneAreaDetector (E2) for queue length (e.g. 50m long) in front of traffic light, 
+			Mainline Sensors (never on merging lane(s)): 
+				on each lane, can be upstream (e.g. 10 meters), donwstream (e.g. 100m), or in merging area (e.g. in middle)
+				can be inductionLoop (E1) or laneAreaDetector (E2)
+
+	Demand:
+		Define Routes
+		Define 5 types of driving behaviors for each vehicle (e.g. car and motorcycle) type and origin (mainline more cooperative, ramp more aggressive)
+		When defining flows, split flows equally to 5 different aggressivity types per vehicle type (e.g. car and motorcycle)
+		vTypeDistribution to define probabilities
+		spawn flow with probability (is geometrically distributed spawning rather than equally distributed) instead of vehsperhour
+			(probability is per second, so probability=1.0 equals 3600 veh/h)
+		important: select departSpeed="max" and departLane="free" departPos="last" to avoid that vehicles are not properly spawned and congestion happens at begin of network
+		important2: even though you spawn a certain amount, it makes sense to double check through measurements how high the flow actually was, as number of vehicles spawned is limited in SUMO
+		
