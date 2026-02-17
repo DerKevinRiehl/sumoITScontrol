@@ -1,5 +1,4 @@
-import traci
-import random
+# sumoITScontrol/control/intersection_management/MaxPressure_Fix.py
 
 class MaxPressure_Fix:
     def __init__(self, params, intersection):
@@ -74,7 +73,7 @@ class MaxPressure_Fix:
                 idx = self.measurement_data["schedule_index"]
                 phase = self.intersection.phases[idx]
                 self.measurement_data["current_signal_phase"] = phase
-                self.measurement_data["current_gt_start"] = traci.simulation.getTime()
+                self.measurement_data["current_gt_start"] = current_time
                 self.measurement_data["fsm_timer"] = 0
                 self.measurement_data["current_fsm_state"] = "green"
                 # apply
@@ -88,7 +87,7 @@ class MaxPressure_Fix:
                 # fsm_timer counted in measurement windows -> convert to seconds approximation
                 # measurement_period is number of sim steps per measurement; assume measurement_period corresponds to 1s in demo config
                 # To be robust, compare simulation absolute time
-                current_gt = traci.simulation.getTime() - self.measurement_data["current_gt_start"]
+                current_gt = current_time - self.measurement_data["current_gt_start"]
                 if current_gt >= green_duration:
                     # go to yellow (transition)
                     # yellow is typically the next phase index
@@ -120,7 +119,7 @@ class MaxPressure_Fix:
                         idx = self.measurement_data["schedule_index"]
                         phase = self.intersection.phases[idx]
                         self.measurement_data["current_signal_phase"] = phase
-                        self.measurement_data["current_gt_start"] = traci.simulation.getTime()
+                        self.measurement_data["current_gt_start"] = current_time
                         self.measurement_data["fsm_timer"] = 0
                         self.measurement_data["current_fsm_state"] = "green"
                         self.intersection.set_signal_on_traffic_lights(phase=int(phase))

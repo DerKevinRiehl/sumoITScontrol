@@ -29,7 +29,6 @@ intersection1 = Intersection(
              4:["-183419042#1_1", "26249185#30_1", "26249185#30_2", "26249185#1_1", "26249185#1_2"]},
     
 )
-
 intersection2 = Intersection(
     tl_id = "intersection2",
     phases = [0, 2, 4],
@@ -40,7 +39,6 @@ intersection2 = Intersection(
                 2:["e2_-38361908#1_1", "e2_-38361908#1_2"],
                 4:["e2_-25973410#1","e2_758088375#0_1", "e2_758088375#0_2"]}
 )
-
 intersection3 = Intersection(
     tl_id = "intersection3",
     phases = [0, 2, 4],
@@ -48,14 +46,12 @@ intersection3 = Intersection(
              2:["E3_1", "E3_2"], 
              4:["-758088377#1_1", "-E1_1", "-E4_1", "-E4_2"]}
 )
-
 intersection4 = Intersection(
     tl_id = "intersection4",
     phases = [0, 2],
     links = {0:["22889927#0_1", "758088377#2_1", "-22889927#2_1"], 
              2:["-25576697#0_0"]}
 )
-
 intersection5 = Intersection(
     tl_id = "intersection5",
     phases = [0, 2, 4],

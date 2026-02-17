@@ -2,11 +2,13 @@ import traci
 from .simulation_tools import SimulationTools
 
 class Intersection:
-    def __init__(self, tl_id, phases, links=None, sensors=None):
+    def __init__(self, tl_id, phases, links=None, sensors=None, green_states=None, yellow_states=None):
         self.tl_id = tl_id
         self.phases = phases
         self.links = links
         self.sensors = sensors
+        self.green_states = green_states
+        self.yellow_states = yellow_states
         if self.sensors is None:
             self.pressure_source = "lanes"
         else:

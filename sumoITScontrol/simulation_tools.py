@@ -8,7 +8,9 @@ class SimulationTools:
     hidden_vehicle_update_time = -1
     hidden_vehicles = []
     hidden_vehicles_current_edge = []
-    
+    # length related
+    lane_lengths = {} 
+
     @staticmethod
     def init_sensor_lists(traci):
         SimulationTools.sensor_list_e1_inductionloops = traci.inductionloop.getIDList()
@@ -41,3 +43,13 @@ class SimulationTools:
                 hidden_vehicles_routes[i][hidden_vehicles_routes_index[i]]
                 for i in range(len(SimulationTools.hidden_vehicles))
             ]
+
+    @staticmethod
+    def get_lane_length(traci, lane_id):
+        if not lane_id in SimulationTools.lane_lengths:
+            SimulationTools.lane_lengths[lane_id] = traci.lane.getLength(lane_id)
+        return SimulationTools.lane_lengths.get(lane_id)
+    
+    @staticmethod
+    def get_lane_length_preloaded(lane_id):
+        return SimulationTools.lane_lengths.get(lane_id)
