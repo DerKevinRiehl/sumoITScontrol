@@ -1,0 +1,2671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-11-20 13:45:25 by Eclipse SUMO netedit Version 1.19.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="DEFAULT_BUS" vClass="bus"/>
+	
+    <!-- Routes -->
+    <route id="route_101" edges="384338154#2 23320397#1 23320399 23320401#0 23320401#1 23320401#2 23320401#3 -384338153#1 -384338153#0 135078198 1162834479#1 E7 E8 -758088380#0 -696225646#3 -696225646#2 -696225646#1 696225651#0 696225651#1 -22889927#4 -22889927#3 -22889927#2 -22889927#0 -758088377#2 -758088377#1 -E1 -E3 -38361908#1 -183049933#0 E17 E18 183419043#1 183419043#2 183419042#1 183419042#3 183419042#4 183419042#5 183419042#7 183419042#8 183419042#9"/>
+    <route id="route_R101" edges="-183419042#9 -183419042#8 -183419042#7 -183419042#6 -183419042#4 -183419042#3 -183419042#1 26249185#0 26249185#1 26249185#30 183049934 1164287131#0 183049933#0 38361908#1 E3 E1 758088377#1 758088377#2 22889927#0 22889927#2 22889927#3 22889927#4 387296014#0 387296014#1 696225646#1 696225646#2 696225646#3 130569446 E5 E6 -E10 -E9 -1162834479#1 -1162834479#0 384338153#0 384338153#1 384338154#0 384338154#1 384338154#2"/>
+
+    <route id="route_102" edges="283020993#1 283020993#2 283020993#3 -25973409#3 -25973409#2 -25973409#1 -E19 -4811464 4807776 758088375#0 38361908#1 E3 E4 23725458#3 23725458#4 23725458#5 281956705#0"/>
+    <route id="route_R102" edges="-281956705#3 -23725458#5 -23725458#4 -23725458#3 -E4 -E3 -38361908#1 -758088375#0 -4807776 -23059834#2 -23059834#1 -283020995 283020996#0 283020996#1 25973409#3 -283020993#3 -283020993#2 -283020993#1"/>
+
+    <route id="route_103" edges="283020993#1 283020993#2 283020993#3 -25973409#3 -25973409#2 -25973409#1 -E19 -4811464 4807776 758088375#0 38361908#1 E3 E4 23725458#3 23725458#4 23725458#5 281956705#0"/>
+    <route id="route_R103" edges="-281956705#3 -23725458#5 -23725458#4 -23725458#3 -E4 -E3 -38361908#1 -758088375#0 -4807776 -23059834#2 -23059834#1 -283020995 283020996#0 283020996#1 25973409#3 -283020993#3 -283020993#2 -283020993#1"/>
+
+    <route id="route_106" edges="-37181834#3 -37181834#2 E13 E15 -E6 -E5 -758088380#0 -696225646#3 -696225646#2 -696225646#1 696225651#0 696225651#1 -22889927#4 -22889927#3 -22889927#2 -22889927#0 -758088377#2 -758088377#1 -E1 -E3 -38361908#1 -183049933#0 E17 E18 183419043#1 183419043#2 183419042#1 183419042#3 183419042#4 183419042#5 183419042#7 183419042#8 183419042#9"/>
+    <route id="route_R106" edges="-183419042#9 -183419042#8 -183419042#7 -183419042#6 -183419042#4 -183419042#3 -183419042#1 26249185#0 26249185#1 26249185#30 183049934 1164287131#0 183049933#0 38361908#1 E3 E1 758088377#1 758088377#2 22889927#0 22889927#2 22889927#3 22889927#4 387296014#0 387296014#1 696225646#1 696225646#2 696225646#3 130569446 E5 E6 -E15 -E13 37181834#2 37181834#3"/>
+
+    <route id="route_114" edges="-37181834#3 -37181834#2 E13 E15 -E6 -E5 -758088380#0 -696225646#3 -696225646#2 -696225646#1 696225651#0 696225651#1 -22889927#4 -22889927#3 -22889927#2 -22889927#0 -758088377#2 -758088377#1 -E1 -E3 -38361908#1 -183049933#0 E17 E18 183419043#1 183419043#2 183419042#1 183419042#3 183419042#4 183419042#5 183419042#7 183419042#8 183419042#9"/>
+    <route id="route_R114" edges="-183419042#9 -183419042#8 -183419042#7 -183419042#6 -183419042#4 -183419042#3 -183419042#1 26249185#0 26249185#1 26249185#30 183049934 1164287131#0 183049933#0 38361908#1 E3 E1 758088377#1 758088377#2 22889927#0 22889927#2 22889927#3 22889927#4 387296014#0 387296014#1 696225646#1 696225646#2 696225646#3 130569446 E5 E6 -E15 -E13 37181834#2 37181834#3"/>
+
+    <route id="route_114A" edges="-37181834#3 -37181834#2 E13 E15 -E6 -E5 -758088380#0 394114218#1 394114218#3"/>
+    <route id="route_R114A" edges="-394114218#3 -394114218#1 130569446 E5 E6 -E15 -E13 37181834#2 37181834#3"/>
+
+    <route id="route_115" edges="-23999291#1 -23999291#0 -1169441387 -1169441388 -1169441386 -331752492#1 -331752492#0 183419043#0 183419043#1 183419043#2 183419042#1 183419042#3 183419042#4 183419042#5 183419042#7 183419042#8 183419042#9"/>
+    <route id="route_R115" edges="-183419042#9 -183419042#8 -183419042#7 -183419042#6 -183419042#4 -183419042#3 -183419042#1 26249185#0 26249185#1 26249185#30 331752492#0 331752492#1 331752492#2 331752494 1169441387 23999291#0 23999291#1"/>
+
+    <route id="route_140" edges="-23999291#1 -23999291#0 -1169441387 -1169441388 -1169441386 -331752492#1 -331752492#0 183419043#0 183419043#1 183419043#2 183419042#1 183419042#3 183419042#4 183419042#5 183419042#7 183419042#8 183419042#9"/>
+    <route id="route_R140" edges="-183419042#9 -183419042#8 -183419042#7 -183419042#6 -183419042#4 -183419042#3 -183419042#1 26249185#0 26249185#1 26249185#30 331752492#0 331752492#1 331752492#2 331752494 1169441387 23999291#0 23999291#1"/>
+
+    <route id="route_132" edges="-281956705#3 -23725458#5 -23725458#4 -23725458#3 -E4 -E3 -38361908#1 -758088375#0 -4807776 4811464 E19 25973409#1 25973409#2 25973409#3 -283020993#3 -283020993#2 -283020993#1"/>
+    <route id="route_R132" edges="-394114218#3 -394114218#1 -696225646#3 -696225646#2 -696225646#1 696225651#0 696225651#1 -22889927#4 -22889927#3 -22889927#2 -22889927#0 -758088377#2 -758088377#1 -E1 E4 23725458#3 23725458#4 23725458#5 281956705#0"/>
+
+    <route id="route_138" edges="-E16 45524884#1 384338153#0 384338153#1 384338154#0 384338154#1 384338154#2 23320397#1 23320399 23320401#0 23320401#1 23320401#2 23320401#3 -384338153#1 -384338153#0 135078198 1162834479#1 E7 E8 -758088380#0 394114218#1 394114218#3"/>
+    <route id="route_R138" edges="-394114218#3 -394114218#1 130569446 E5 E6 -E10 -E9 -1162834479#1 -1162834479#0 384338153#0 384338153#1 384338154#0 384338154#1 384338154#2 23320397#1 23320399 23320401#0 23320401#1 23320401#2 23320401#3 -384338153#1 -384338153#0 -45524884#1 E16"/>
+
+    <route id="route_RN16" edges="-37181834#3 -37181834#2 E13 E15 -E6 -E5 -758088380#0 -696225646#3 -696225646#2 -696225646#1 -387296014#1 -387296014#0 -22889927#4 -22889927#3 -22889927#2 -22889927#0 -758088377#2 -758088377#1 -E1 -E3 -38361908#1 -183049933#0 E17 E18 183419043#1 183419043#2 183419042#1 183419042#3 183419042#4 183419042#5 183419042#7 183419042#8 183419042#9"/>
+    <route id="route_N16" edges="-183419042#9 -183419042#8 -183419042#7 -183419042#6 -183419042#4 -183419042#3 -183419042#1 26249185#0 26249185#1 26249185#30 183049934 1164287131#0 183049933#0 38361908#1 E3 E1 758088377#1 758088377#2 22889927#0 22889927#2 22889927#3 22889927#4 387296014#0 387296014#1 696225646#1 696225646#2 696225646#3 130569446 E5 E6 -E15 -E13 37181834#2 37181834#3"/>
+
+	<!-- Bus Trips -->
+    <vehicle id="bus_route_101_1" type="DEFAULT_BUS" route="route_101" depart="16020">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_2" type="DEFAULT_BUS" route="route_101" depart="17820">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_3" type="DEFAULT_BUS" route="route_101" depart="18720">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_4" type="DEFAULT_BUS" route="route_101" depart="19620">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_5" type="DEFAULT_BUS" route="route_101" depart="20520">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_6" type="DEFAULT_BUS" route="route_101" depart="21420">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_7" type="DEFAULT_BUS" route="route_101" depart="22320">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_8" type="DEFAULT_BUS" route="route_101" depart="23220">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_9" type="DEFAULT_BUS" route="route_101" depart="24120">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_10" type="DEFAULT_BUS" route="route_101" depart="25020">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_11" type="DEFAULT_BUS" route="route_101" depart="25920">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_12" type="DEFAULT_BUS" route="route_101" depart="26820">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_13" type="DEFAULT_BUS" route="route_101" depart="27720">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_14" type="DEFAULT_BUS" route="route_101" depart="28620">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_15" type="DEFAULT_BUS" route="route_101" depart="29520">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_16" type="DEFAULT_BUS" route="route_101" depart="30420">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_17" type="DEFAULT_BUS" route="route_101" depart="31320">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_18" type="DEFAULT_BUS" route="route_101" depart="32220">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_19" type="DEFAULT_BUS" route="route_101" depart="33120">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_20" type="DEFAULT_BUS" route="route_101" depart="34020">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_21" type="DEFAULT_BUS" route="route_101" depart="34920">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_22" type="DEFAULT_BUS" route="route_101" depart="35820">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_23" type="DEFAULT_BUS" route="route_101" depart="36720">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_24" type="DEFAULT_BUS" route="route_101" depart="37620">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_25" type="DEFAULT_BUS" route="route_101" depart="38520">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_26" type="DEFAULT_BUS" route="route_101" depart="39420">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_27" type="DEFAULT_BUS" route="route_101" depart="40320">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_28" type="DEFAULT_BUS" route="route_101" depart="41220">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_29" type="DEFAULT_BUS" route="route_101" depart="42120">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_30" type="DEFAULT_BUS" route="route_101" depart="43020">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_31" type="DEFAULT_BUS" route="route_101" depart="43920">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_32" type="DEFAULT_BUS" route="route_101" depart="44820">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_33" type="DEFAULT_BUS" route="route_101" depart="45720">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_34" type="DEFAULT_BUS" route="route_101" depart="46620">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_35" type="DEFAULT_BUS" route="route_101" depart="47040">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_36" type="DEFAULT_BUS" route="route_101" depart="47520">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_37" type="DEFAULT_BUS" route="route_101" depart="48420">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_38" type="DEFAULT_BUS" route="route_101" depart="49320">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_39" type="DEFAULT_BUS" route="route_101" depart="50220">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_40" type="DEFAULT_BUS" route="route_101" depart="51120">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_41" type="DEFAULT_BUS" route="route_101" depart="52020">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_42" type="DEFAULT_BUS" route="route_101" depart="52920">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_43" type="DEFAULT_BUS" route="route_101" depart="53820">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_44" type="DEFAULT_BUS" route="route_101" depart="54720">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_45" type="DEFAULT_BUS" route="route_101" depart="55620">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_46" type="DEFAULT_BUS" route="route_101" depart="56520">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_47" type="DEFAULT_BUS" route="route_101" depart="57420">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_48" type="DEFAULT_BUS" route="route_101" depart="58320">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_49" type="DEFAULT_BUS" route="route_101" depart="59220">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_50" type="DEFAULT_BUS" route="route_101" depart="60120">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_51" type="DEFAULT_BUS" route="route_101" depart="61020">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_52" type="DEFAULT_BUS" route="route_101" depart="61920">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_53" type="DEFAULT_BUS" route="route_101" depart="62820">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_54" type="DEFAULT_BUS" route="route_101" depart="63720">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_55" type="DEFAULT_BUS" route="route_101" depart="64620">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_56" type="DEFAULT_BUS" route="route_101" depart="65520">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_57" type="DEFAULT_BUS" route="route_101" depart="66420">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_58" type="DEFAULT_BUS" route="route_101" depart="67320">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_59" type="DEFAULT_BUS" route="route_101" depart="68220">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_60" type="DEFAULT_BUS" route="route_101" depart="69120">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_61" type="DEFAULT_BUS" route="route_101" depart="70260">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_62" type="DEFAULT_BUS" route="route_101" depart="72060">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_63" type="DEFAULT_BUS" route="route_101" depart="73860">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_64" type="DEFAULT_BUS" route="route_101" depart="75660">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_65" type="DEFAULT_BUS" route="route_101" depart="77460">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_66" type="DEFAULT_BUS" route="route_101" depart="79260">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_67" type="DEFAULT_BUS" route="route_101" depart="81060">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_68" type="DEFAULT_BUS" route="route_101" depart="82860">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_101_69" type="DEFAULT_BUS" route="route_101" depart="84660">
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_2" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_70" type="DEFAULT_BUS" route="route_R101" depart="1380">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_71" type="DEFAULT_BUS" route="route_R101" depart="19440">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_72" type="DEFAULT_BUS" route="route_R101" depart="20340">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_73" type="DEFAULT_BUS" route="route_R101" depart="21240">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_74" type="DEFAULT_BUS" route="route_R101" depart="22140">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_75" type="DEFAULT_BUS" route="route_R101" depart="23040">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_76" type="DEFAULT_BUS" route="route_R101" depart="23940">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_77" type="DEFAULT_BUS" route="route_R101" depart="24840">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_78" type="DEFAULT_BUS" route="route_R101" depart="25740">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_79" type="DEFAULT_BUS" route="route_R101" depart="26640">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_80" type="DEFAULT_BUS" route="route_R101" depart="27540">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_81" type="DEFAULT_BUS" route="route_R101" depart="28440">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_82" type="DEFAULT_BUS" route="route_R101" depart="29340">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_83" type="DEFAULT_BUS" route="route_R101" depart="30240">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_84" type="DEFAULT_BUS" route="route_R101" depart="31140">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_85" type="DEFAULT_BUS" route="route_R101" depart="32040">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_86" type="DEFAULT_BUS" route="route_R101" depart="32940">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_87" type="DEFAULT_BUS" route="route_R101" depart="33840">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_88" type="DEFAULT_BUS" route="route_R101" depart="34740">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_89" type="DEFAULT_BUS" route="route_R101" depart="35640">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_90" type="DEFAULT_BUS" route="route_R101" depart="36540">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_91" type="DEFAULT_BUS" route="route_R101" depart="37440">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_92" type="DEFAULT_BUS" route="route_R101" depart="38340">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_93" type="DEFAULT_BUS" route="route_R101" depart="39240">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_94" type="DEFAULT_BUS" route="route_R101" depart="40140">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_95" type="DEFAULT_BUS" route="route_R101" depart="41040">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_96" type="DEFAULT_BUS" route="route_R101" depart="41940">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_97" type="DEFAULT_BUS" route="route_R101" depart="42840">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_98" type="DEFAULT_BUS" route="route_R101" depart="43740">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_99" type="DEFAULT_BUS" route="route_R101" depart="44640">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_100" type="DEFAULT_BUS" route="route_R101" depart="45540">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_101" type="DEFAULT_BUS" route="route_R101" depart="46440">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_102" type="DEFAULT_BUS" route="route_R101" depart="47340">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_103" type="DEFAULT_BUS" route="route_R101" depart="48240">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_104" type="DEFAULT_BUS" route="route_R101" depart="49140">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_105" type="DEFAULT_BUS" route="route_R101" depart="50040">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_106" type="DEFAULT_BUS" route="route_R101" depart="50940">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_107" type="DEFAULT_BUS" route="route_R101" depart="51840">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_108" type="DEFAULT_BUS" route="route_R101" depart="52740">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_109" type="DEFAULT_BUS" route="route_R101" depart="53640">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_110" type="DEFAULT_BUS" route="route_R101" depart="54540">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_111" type="DEFAULT_BUS" route="route_R101" depart="55440">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_112" type="DEFAULT_BUS" route="route_R101" depart="56340">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_113" type="DEFAULT_BUS" route="route_R101" depart="57240">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_114" type="DEFAULT_BUS" route="route_R101" depart="58140">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_115" type="DEFAULT_BUS" route="route_R101" depart="59040">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_116" type="DEFAULT_BUS" route="route_R101" depart="59940">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_117" type="DEFAULT_BUS" route="route_R101" depart="60840">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_118" type="DEFAULT_BUS" route="route_R101" depart="61740">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_119" type="DEFAULT_BUS" route="route_R101" depart="62640">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_120" type="DEFAULT_BUS" route="route_R101" depart="63540">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_121" type="DEFAULT_BUS" route="route_R101" depart="64440">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_122" type="DEFAULT_BUS" route="route_R101" depart="65340">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_123" type="DEFAULT_BUS" route="route_R101" depart="66240">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_124" type="DEFAULT_BUS" route="route_R101" depart="67140">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_125" type="DEFAULT_BUS" route="route_R101" depart="68040">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_126" type="DEFAULT_BUS" route="route_R101" depart="68940">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_127" type="DEFAULT_BUS" route="route_R101" depart="69840">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_128" type="DEFAULT_BUS" route="route_R101" depart="70740">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_129" type="DEFAULT_BUS" route="route_R101" depart="71640">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_130" type="DEFAULT_BUS" route="route_R101" depart="73380">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_131" type="DEFAULT_BUS" route="route_R101" depart="75180">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_132" type="DEFAULT_BUS" route="route_R101" depart="76980">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_133" type="DEFAULT_BUS" route="route_R101" depart="78780">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_134" type="DEFAULT_BUS" route="route_R101" depart="80580">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_135" type="DEFAULT_BUS" route="route_R101" depart="82380">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_136" type="DEFAULT_BUS" route="route_R101" depart="84180">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R101_137" type="DEFAULT_BUS" route="route_R101" depart="85980">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_16" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_138" type="DEFAULT_BUS" route="route_102" depart="21960">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_139" type="DEFAULT_BUS" route="route_102" depart="23760">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_140" type="DEFAULT_BUS" route="route_102" depart="25560">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_141" type="DEFAULT_BUS" route="route_102" depart="27360">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_142" type="DEFAULT_BUS" route="route_102" depart="29160">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_143" type="DEFAULT_BUS" route="route_102" depart="30960">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_144" type="DEFAULT_BUS" route="route_102" depart="32760">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_145" type="DEFAULT_BUS" route="route_102" depart="34560">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_146" type="DEFAULT_BUS" route="route_102" depart="36360">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_147" type="DEFAULT_BUS" route="route_102" depart="38160">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_148" type="DEFAULT_BUS" route="route_102" depart="39960">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_149" type="DEFAULT_BUS" route="route_102" depart="41760">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_150" type="DEFAULT_BUS" route="route_102" depart="43560">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_151" type="DEFAULT_BUS" route="route_102" depart="45360">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_152" type="DEFAULT_BUS" route="route_102" depart="47160">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_153" type="DEFAULT_BUS" route="route_102" depart="48960">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_154" type="DEFAULT_BUS" route="route_102" depart="50760">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_155" type="DEFAULT_BUS" route="route_102" depart="52560">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_156" type="DEFAULT_BUS" route="route_102" depart="54360">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_157" type="DEFAULT_BUS" route="route_102" depart="56160">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_158" type="DEFAULT_BUS" route="route_102" depart="57960">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_159" type="DEFAULT_BUS" route="route_102" depart="59760">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_160" type="DEFAULT_BUS" route="route_102" depart="61560">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_161" type="DEFAULT_BUS" route="route_102" depart="63360">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_162" type="DEFAULT_BUS" route="route_102" depart="65160">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_163" type="DEFAULT_BUS" route="route_102" depart="66960">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_164" type="DEFAULT_BUS" route="route_102" depart="68760">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_165" type="DEFAULT_BUS" route="route_102" depart="70560">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_166" type="DEFAULT_BUS" route="route_102" depart="71940">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_167" type="DEFAULT_BUS" route="route_102" depart="75540">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_168" type="DEFAULT_BUS" route="route_102" depart="79140">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_102_169" type="DEFAULT_BUS" route="route_102" depart="82740">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_170" type="DEFAULT_BUS" route="route_103" depart="18360">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_171" type="DEFAULT_BUS" route="route_103" depart="20160">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_172" type="DEFAULT_BUS" route="route_103" depart="22860">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_173" type="DEFAULT_BUS" route="route_103" depart="24660">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_174" type="DEFAULT_BUS" route="route_103" depart="26460">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_175" type="DEFAULT_BUS" route="route_103" depart="28260">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_176" type="DEFAULT_BUS" route="route_103" depart="30060">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_177" type="DEFAULT_BUS" route="route_103" depart="31860">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_178" type="DEFAULT_BUS" route="route_103" depart="33660">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_179" type="DEFAULT_BUS" route="route_103" depart="35460">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_180" type="DEFAULT_BUS" route="route_103" depart="37260">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_181" type="DEFAULT_BUS" route="route_103" depart="39060">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_182" type="DEFAULT_BUS" route="route_103" depart="40860">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_183" type="DEFAULT_BUS" route="route_103" depart="42660">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_184" type="DEFAULT_BUS" route="route_103" depart="44460">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_185" type="DEFAULT_BUS" route="route_103" depart="46260">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_186" type="DEFAULT_BUS" route="route_103" depart="48060">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_187" type="DEFAULT_BUS" route="route_103" depart="49860">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_188" type="DEFAULT_BUS" route="route_103" depart="51660">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_189" type="DEFAULT_BUS" route="route_103" depart="53460">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_190" type="DEFAULT_BUS" route="route_103" depart="55260">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_191" type="DEFAULT_BUS" route="route_103" depart="57060">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_192" type="DEFAULT_BUS" route="route_103" depart="58860">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_193" type="DEFAULT_BUS" route="route_103" depart="60660">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_194" type="DEFAULT_BUS" route="route_103" depart="62460">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_195" type="DEFAULT_BUS" route="route_103" depart="64260">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_196" type="DEFAULT_BUS" route="route_103" depart="66060">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_197" type="DEFAULT_BUS" route="route_103" depart="67860">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_198" type="DEFAULT_BUS" route="route_103" depart="69660">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_103_199" type="DEFAULT_BUS" route="route_103" depart="71460">
+        <stop busStop="bs_23" duration="20.00" />
+        <stop busStop="bs_21" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_200" type="DEFAULT_BUS" route="route_106" depart="18820">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_201" type="DEFAULT_BUS" route="route_106" depart="20620">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_202" type="DEFAULT_BUS" route="route_106" depart="21580">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_203" type="DEFAULT_BUS" route="route_106" depart="22480">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_204" type="DEFAULT_BUS" route="route_106" depart="24280">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_205" type="DEFAULT_BUS" route="route_106" depart="25180">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_206" type="DEFAULT_BUS" route="route_106" depart="26080">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_207" type="DEFAULT_BUS" route="route_106" depart="27880">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_208" type="DEFAULT_BUS" route="route_106" depart="29680">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_209" type="DEFAULT_BUS" route="route_106" depart="31480">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_210" type="DEFAULT_BUS" route="route_106" depart="33280">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_211" type="DEFAULT_BUS" route="route_106" depart="35080">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_212" type="DEFAULT_BUS" route="route_106" depart="36880">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_213" type="DEFAULT_BUS" route="route_106" depart="38680">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_214" type="DEFAULT_BUS" route="route_106" depart="40480">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_215" type="DEFAULT_BUS" route="route_106" depart="42280">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_216" type="DEFAULT_BUS" route="route_106" depart="44080">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_217" type="DEFAULT_BUS" route="route_106" depart="45880">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_218" type="DEFAULT_BUS" route="route_106" depart="47680">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_219" type="DEFAULT_BUS" route="route_106" depart="49480">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_220" type="DEFAULT_BUS" route="route_106" depart="51280">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_221" type="DEFAULT_BUS" route="route_106" depart="53080">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_222" type="DEFAULT_BUS" route="route_106" depart="54880">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_223" type="DEFAULT_BUS" route="route_106" depart="56680">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_224" type="DEFAULT_BUS" route="route_106" depart="58480">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_225" type="DEFAULT_BUS" route="route_106" depart="60280">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_226" type="DEFAULT_BUS" route="route_106" depart="62080">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_227" type="DEFAULT_BUS" route="route_106" depart="63880">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_228" type="DEFAULT_BUS" route="route_106" depart="65680">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_229" type="DEFAULT_BUS" route="route_106" depart="67480">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_230" type="DEFAULT_BUS" route="route_106" depart="68320">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_231" type="DEFAULT_BUS" route="route_106" depart="70120">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_232" type="DEFAULT_BUS" route="route_106" depart="71920">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_233" type="DEFAULT_BUS" route="route_106" depart="73720">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_234" type="DEFAULT_BUS" route="route_106" depart="75520">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_235" type="DEFAULT_BUS" route="route_106" depart="79120">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_236" type="DEFAULT_BUS" route="route_106" depart="82720">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_106_237" type="DEFAULT_BUS" route="route_106" depart="86320">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_238" type="DEFAULT_BUS" route="route_R106" depart="1200">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_239" type="DEFAULT_BUS" route="route_R106" depart="20100">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_240" type="DEFAULT_BUS" route="route_R106" depart="21900">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_241" type="DEFAULT_BUS" route="route_R106" depart="22800">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_242" type="DEFAULT_BUS" route="route_R106" depart="23700">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_243" type="DEFAULT_BUS" route="route_R106" depart="24600">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_244" type="DEFAULT_BUS" route="route_R106" depart="25500">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_245" type="DEFAULT_BUS" route="route_R106" depart="26400">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_246" type="DEFAULT_BUS" route="route_R106" depart="27300">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_247" type="DEFAULT_BUS" route="route_R106" depart="29100">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_248" type="DEFAULT_BUS" route="route_R106" depart="30900">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_249" type="DEFAULT_BUS" route="route_R106" depart="32700">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_250" type="DEFAULT_BUS" route="route_R106" depart="34500">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_251" type="DEFAULT_BUS" route="route_R106" depart="36300">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_252" type="DEFAULT_BUS" route="route_R106" depart="38100">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_253" type="DEFAULT_BUS" route="route_R106" depart="39900">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_254" type="DEFAULT_BUS" route="route_R106" depart="41700">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_255" type="DEFAULT_BUS" route="route_R106" depart="43500">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_256" type="DEFAULT_BUS" route="route_R106" depart="44100">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_257" type="DEFAULT_BUS" route="route_R106" depart="45300">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_258" type="DEFAULT_BUS" route="route_R106" depart="47100">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_259" type="DEFAULT_BUS" route="route_R106" depart="47520">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_260" type="DEFAULT_BUS" route="route_R106" depart="48900">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_261" type="DEFAULT_BUS" route="route_R106" depart="50700">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_262" type="DEFAULT_BUS" route="route_R106" depart="52500">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_263" type="DEFAULT_BUS" route="route_R106" depart="54300">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_264" type="DEFAULT_BUS" route="route_R106" depart="56100">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_265" type="DEFAULT_BUS" route="route_R106" depart="57000">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_266" type="DEFAULT_BUS" route="route_R106" depart="57900">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_267" type="DEFAULT_BUS" route="route_R106" depart="59700">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_268" type="DEFAULT_BUS" route="route_R106" depart="61500">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_269" type="DEFAULT_BUS" route="route_R106" depart="63300">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_270" type="DEFAULT_BUS" route="route_R106" depart="65100">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_271" type="DEFAULT_BUS" route="route_R106" depart="66900">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_272" type="DEFAULT_BUS" route="route_R106" depart="68700">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_273" type="DEFAULT_BUS" route="route_R106" depart="70500">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_274" type="DEFAULT_BUS" route="route_R106" depart="72300">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_275" type="DEFAULT_BUS" route="route_R106" depart="74100">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_276" type="DEFAULT_BUS" route="route_R106" depart="76800">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_277" type="DEFAULT_BUS" route="route_R106" depart="80400">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R106_278" type="DEFAULT_BUS" route="route_R106" depart="84000">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_279" type="DEFAULT_BUS" route="route_114" depart="0">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_280" type="DEFAULT_BUS" route="route_114" depart="18000">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_281" type="DEFAULT_BUS" route="route_114" depart="19800">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_282" type="DEFAULT_BUS" route="route_114" depart="21600">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_283" type="DEFAULT_BUS" route="route_114" depart="23400">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_284" type="DEFAULT_BUS" route="route_114" depart="24300">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_285" type="DEFAULT_BUS" route="route_114" depart="25200">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_286" type="DEFAULT_BUS" route="route_114" depart="25800">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_287" type="DEFAULT_BUS" route="route_114" depart="26100">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_288" type="DEFAULT_BUS" route="route_114" depart="27000">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_289" type="DEFAULT_BUS" route="route_114" depart="27900">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_290" type="DEFAULT_BUS" route="route_114" depart="28800">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_291" type="DEFAULT_BUS" route="route_114" depart="29700">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_292" type="DEFAULT_BUS" route="route_114" depart="30600">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_293" type="DEFAULT_BUS" route="route_114" depart="31500">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_294" type="DEFAULT_BUS" route="route_114" depart="32400">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_295" type="DEFAULT_BUS" route="route_114" depart="34200">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_296" type="DEFAULT_BUS" route="route_114" depart="36000">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_297" type="DEFAULT_BUS" route="route_114" depart="37800">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_298" type="DEFAULT_BUS" route="route_114" depart="39600">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_299" type="DEFAULT_BUS" route="route_114" depart="41400">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_300" type="DEFAULT_BUS" route="route_114" depart="43200">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_301" type="DEFAULT_BUS" route="route_114" depart="45000">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_302" type="DEFAULT_BUS" route="route_114" depart="46800">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_303" type="DEFAULT_BUS" route="route_114" depart="48600">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_304" type="DEFAULT_BUS" route="route_114" depart="50400">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_305" type="DEFAULT_BUS" route="route_114" depart="52200">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_306" type="DEFAULT_BUS" route="route_114" depart="54000">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_307" type="DEFAULT_BUS" route="route_114" depart="54900">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_308" type="DEFAULT_BUS" route="route_114" depart="55800">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_309" type="DEFAULT_BUS" route="route_114" depart="57600">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_310" type="DEFAULT_BUS" route="route_114" depart="58500">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_311" type="DEFAULT_BUS" route="route_114" depart="59400">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_312" type="DEFAULT_BUS" route="route_114" depart="60300">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_313" type="DEFAULT_BUS" route="route_114" depart="61200">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_314" type="DEFAULT_BUS" route="route_114" depart="62100">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_315" type="DEFAULT_BUS" route="route_114" depart="63000">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_316" type="DEFAULT_BUS" route="route_114" depart="63900">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_317" type="DEFAULT_BUS" route="route_114" depart="64800">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_318" type="DEFAULT_BUS" route="route_114" depart="65700">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_319" type="DEFAULT_BUS" route="route_114" depart="66600">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_320" type="DEFAULT_BUS" route="route_114" depart="67500">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_321" type="DEFAULT_BUS" route="route_114" depart="68400">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_322" type="DEFAULT_BUS" route="route_114" depart="69300">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_323" type="DEFAULT_BUS" route="route_114" depart="70200">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_324" type="DEFAULT_BUS" route="route_114" depart="71100">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_325" type="DEFAULT_BUS" route="route_114" depart="72000">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_326" type="DEFAULT_BUS" route="route_114" depart="73800">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_327" type="DEFAULT_BUS" route="route_114" depart="75600">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_328" type="DEFAULT_BUS" route="route_114" depart="77400">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_329" type="DEFAULT_BUS" route="route_114" depart="79200">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_330" type="DEFAULT_BUS" route="route_114" depart="81000">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_331" type="DEFAULT_BUS" route="route_114" depart="82800">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_114_332" type="DEFAULT_BUS" route="route_114" depart="84600">
+        <stop busStop="bs_25" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_333" type="DEFAULT_BUS" route="route_R114" depart="1260">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_334" type="DEFAULT_BUS" route="route_R114" depart="19260">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_335" type="DEFAULT_BUS" route="route_R114" depart="20160">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_336" type="DEFAULT_BUS" route="route_R114" depart="21060">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_337" type="DEFAULT_BUS" route="route_R114" depart="21960">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_338" type="DEFAULT_BUS" route="route_R114" depart="22860">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_339" type="DEFAULT_BUS" route="route_R114" depart="23760">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_340" type="DEFAULT_BUS" route="route_R114" depart="24660">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_341" type="DEFAULT_BUS" route="route_R114" depart="25560">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_342" type="DEFAULT_BUS" route="route_R114" depart="26460">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_343" type="DEFAULT_BUS" route="route_R114" depart="27360">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_344" type="DEFAULT_BUS" route="route_R114" depart="28260">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_345" type="DEFAULT_BUS" route="route_R114" depart="29160">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_346" type="DEFAULT_BUS" route="route_R114" depart="30060">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_347" type="DEFAULT_BUS" route="route_R114" depart="31860">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_348" type="DEFAULT_BUS" route="route_R114" depart="33660">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_349" type="DEFAULT_BUS" route="route_R114" depart="35460">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_350" type="DEFAULT_BUS" route="route_R114" depart="37260">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_351" type="DEFAULT_BUS" route="route_R114" depart="39060">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_352" type="DEFAULT_BUS" route="route_R114" depart="40860">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_353" type="DEFAULT_BUS" route="route_R114" depart="42660">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_354" type="DEFAULT_BUS" route="route_R114" depart="44460">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_355" type="DEFAULT_BUS" route="route_R114" depart="46260">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_356" type="DEFAULT_BUS" route="route_R114" depart="48060">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_357" type="DEFAULT_BUS" route="route_R114" depart="49860">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_358" type="DEFAULT_BUS" route="route_R114" depart="51660">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_359" type="DEFAULT_BUS" route="route_R114" depart="53460">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_360" type="DEFAULT_BUS" route="route_R114" depart="55260">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_361" type="DEFAULT_BUS" route="route_R114" depart="56160">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_362" type="DEFAULT_BUS" route="route_R114" depart="57060">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_363" type="DEFAULT_BUS" route="route_R114" depart="57960">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_364" type="DEFAULT_BUS" route="route_R114" depart="58860">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_365" type="DEFAULT_BUS" route="route_R114" depart="59760">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_366" type="DEFAULT_BUS" route="route_R114" depart="60660">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_367" type="DEFAULT_BUS" route="route_R114" depart="61560">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_368" type="DEFAULT_BUS" route="route_R114" depart="62460">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_369" type="DEFAULT_BUS" route="route_R114" depart="63360">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_370" type="DEFAULT_BUS" route="route_R114" depart="64260">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_371" type="DEFAULT_BUS" route="route_R114" depart="65160">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_372" type="DEFAULT_BUS" route="route_R114" depart="66060">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_373" type="DEFAULT_BUS" route="route_R114" depart="66960">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_374" type="DEFAULT_BUS" route="route_R114" depart="67860">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_375" type="DEFAULT_BUS" route="route_R114" depart="69660">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_376" type="DEFAULT_BUS" route="route_R114" depart="71460">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_377" type="DEFAULT_BUS" route="route_R114" depart="73260">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_378" type="DEFAULT_BUS" route="route_R114" depart="75060">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_379" type="DEFAULT_BUS" route="route_R114" depart="76860">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_380" type="DEFAULT_BUS" route="route_R114" depart="78660">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_381" type="DEFAULT_BUS" route="route_R114" depart="80460">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_382" type="DEFAULT_BUS" route="route_R114" depart="82260">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_383" type="DEFAULT_BUS" route="route_R114" depart="84060">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R114_384" type="DEFAULT_BUS" route="route_R114" depart="85860">
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_18" duration="20.00" />
+        <stop busStop="bs_26" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_115_385" type="DEFAULT_BUS" route="route_115" depart="26160">
+        <stop busStop="bs_11" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_115_386" type="DEFAULT_BUS" route="route_115" depart="47460">
+        <stop busStop="bs_11" duration="20.00" />
+        <stop busStop="bs_3" duration="20.00" />
+        <stop busStop="bs_4" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R115_387" type="DEFAULT_BUS" route="route_R115" depart="25140">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_12" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R115_388" type="DEFAULT_BUS" route="route_R115" depart="26400">
+        <stop busStop="bs_9" duration="20.00" />
+        <stop busStop="bs_8" duration="20.00" />
+        <stop busStop="bs_12" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_389" type="DEFAULT_BUS" route="route_132" depart="25800">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_390" type="DEFAULT_BUS" route="route_132" depart="26880">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_391" type="DEFAULT_BUS" route="route_132" depart="29160">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_392" type="DEFAULT_BUS" route="route_132" depart="33900">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_393" type="DEFAULT_BUS" route="route_132" depart="37500">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_394" type="DEFAULT_BUS" route="route_132" depart="40980">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_395" type="DEFAULT_BUS" route="route_132" depart="41100">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_396" type="DEFAULT_BUS" route="route_132" depart="44280">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_397" type="DEFAULT_BUS" route="route_132" depart="45480">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_398" type="DEFAULT_BUS" route="route_132" depart="47940">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_399" type="DEFAULT_BUS" route="route_132" depart="49080">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_400" type="DEFAULT_BUS" route="route_132" depart="49440">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_401" type="DEFAULT_BUS" route="route_132" depart="52680">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_402" type="DEFAULT_BUS" route="route_132" depart="56280">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_403" type="DEFAULT_BUS" route="route_132" depart="56880">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_404" type="DEFAULT_BUS" route="route_132" depart="59820">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_405" type="DEFAULT_BUS" route="route_132" depart="59880">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_406" type="DEFAULT_BUS" route="route_132" depart="62820">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_132_407" type="DEFAULT_BUS" route="route_132" depart="63480">
+        <stop busStop="bs_6" duration="20.00" />
+        <stop busStop="bs_13" duration="20.00" />
+        <stop busStop="bs_22" duration="20.00" />
+        <stop busStop="bs_24" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_408" type="DEFAULT_BUS" route="route_R132" depart="26220">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_409" type="DEFAULT_BUS" route="route_R132" depart="27960">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_410" type="DEFAULT_BUS" route="route_R132" depart="29580">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_411" type="DEFAULT_BUS" route="route_R132" depart="34500">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_412" type="DEFAULT_BUS" route="route_R132" depart="38100">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_413" type="DEFAULT_BUS" route="route_R132" depart="41340">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_414" type="DEFAULT_BUS" route="route_R132" depart="42480">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_415" type="DEFAULT_BUS" route="route_R132" depart="44700">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_416" type="DEFAULT_BUS" route="route_R132" depart="46080">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_417" type="DEFAULT_BUS" route="route_R132" depart="46980">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_418" type="DEFAULT_BUS" route="route_R132" depart="48300">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_419" type="DEFAULT_BUS" route="route_R132" depart="49680">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_420" type="DEFAULT_BUS" route="route_R132" depart="49800">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_421" type="DEFAULT_BUS" route="route_R132" depart="53280">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_422" type="DEFAULT_BUS" route="route_R132" depart="54360">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_423" type="DEFAULT_BUS" route="route_R132" depart="55560">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_424" type="DEFAULT_BUS" route="route_R132" depart="56880">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_425" type="DEFAULT_BUS" route="route_R132" depart="57300">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_426" type="DEFAULT_BUS" route="route_R132" depart="60300">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_427" type="DEFAULT_BUS" route="route_R132" depart="60480">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_428" type="DEFAULT_BUS" route="route_R132" depart="63300">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R132_429" type="DEFAULT_BUS" route="route_R132" depart="64080">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_17" duration="20.00" />
+        <stop busStop="bs_5" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_430" type="DEFAULT_BUS" route="route_138" depart="22980">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_431" type="DEFAULT_BUS" route="route_138" depart="25740">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_432" type="DEFAULT_BUS" route="route_138" depart="27180">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_433" type="DEFAULT_BUS" route="route_138" depart="30060">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_434" type="DEFAULT_BUS" route="route_138" depart="33420">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_435" type="DEFAULT_BUS" route="route_138" depart="40800">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_436" type="DEFAULT_BUS" route="route_138" depart="44340">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_437" type="DEFAULT_BUS" route="route_138" depart="47100">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_438" type="DEFAULT_BUS" route="route_138" depart="49620">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_439" type="DEFAULT_BUS" route="route_138" depart="52320">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_440" type="DEFAULT_BUS" route="route_138" depart="54840">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_441" type="DEFAULT_BUS" route="route_138" depart="57600">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_442" type="DEFAULT_BUS" route="route_138" depart="60120">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_443" type="DEFAULT_BUS" route="route_138" depart="63240">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_138_444" type="DEFAULT_BUS" route="route_138" depart="65040">
+        <stop busStop="bs_1" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_20" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_445" type="DEFAULT_BUS" route="route_R138" depart="21660">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_446" type="DEFAULT_BUS" route="route_R138" depart="24360">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_447" type="DEFAULT_BUS" route="route_R138" depart="26460">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_448" type="DEFAULT_BUS" route="route_R138" depart="30000">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_449" type="DEFAULT_BUS" route="route_R138" depart="33900">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_450" type="DEFAULT_BUS" route="route_R138" depart="41100">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_451" type="DEFAULT_BUS" route="route_R138" depart="44580">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_452" type="DEFAULT_BUS" route="route_R138" depart="47940">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_453" type="DEFAULT_BUS" route="route_R138" depart="50760">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_454" type="DEFAULT_BUS" route="route_R138" depart="53220">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_455" type="DEFAULT_BUS" route="route_R138" depart="56100">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_456" type="DEFAULT_BUS" route="route_R138" depart="58320">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_457" type="DEFAULT_BUS" route="route_R138" depart="61200">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_458" type="DEFAULT_BUS" route="route_R138" depart="63660">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+    <vehicle id="bus_route_R138_459" type="DEFAULT_BUS" route="route_R138" depart="66660">
+        <stop busStop="bs_19" duration="20.00" />
+        <stop busStop="bs_0" duration="20.00" />
+        <stop busStop="bs_10" duration="20.00" />
+    </vehicle>
+</routes>

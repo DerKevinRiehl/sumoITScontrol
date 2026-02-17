@@ -8,11 +8,6 @@ warnings.filterwarnings('ignore')
 from sumoITScontrol import RampMeter
 from sumoITScontrol.control.ramp_metering import ALINEA
 
-
-############## CLASSES  
-
-
-
 ############## PARAMETERS
 simulation_parameters = {
     "sumo_config_file": "./demo_simulation_models/example_ramp_metering/Configuration_1.sumocfg",

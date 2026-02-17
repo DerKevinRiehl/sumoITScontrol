@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-12-12 08:27:32 by Eclipse SUMO sumo Version 1.19.0 -->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <!-- SIMULATION SETTINGS -->
+    <time>
+        <begin value="32400"/>
+        <end value="86400"/> <!-- 24h -->
+    </time>
+    
+    <!-- INPUT FILES -->
+    <input>
+        <net-file value="Network.net.xml"/>
+        <route-files value="VehicleDemand.rou.xml,BusDemand.rou.xml"/>
+    </input>
+	<additional-files value="BusStops.add.xml,Sensors.add.xml"/>
+	
+    <!-- PROCESSING OPTIONS -->
+    <processing>
+        <time-to-teleport value="-1"/> <!-- Disable Teleportation -->
+        <step-length value="0.25"/> <!-- Quarter Seconds -->
+		<ignore-junction-blocker value="0.1" />
+    </processing>
+    
+</configuration>

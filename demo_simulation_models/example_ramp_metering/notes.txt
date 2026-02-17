@@ -26,6 +26,7 @@ Implementation Details:
 		Define 5 types of driving behaviors for each vehicle (e.g. car and motorcycle) type and origin (mainline more cooperative, ramp more aggressive)
 		When defining flows, split flows equally to 5 different aggressivity types per vehicle type (e.g. car and motorcycle)
 		vTypeDistribution to define probabilities
+		
 		spawn flow with probability (is geometrically distributed spawning rather than equally distributed) instead of vehsperhour
 			(probability is per second, so probability=1.0 equals 3600 veh/h)
 		important: select departSpeed="max" and departLane="free" departPos="last" to avoid that vehicles are not properly spawned and congestion happens at begin of network

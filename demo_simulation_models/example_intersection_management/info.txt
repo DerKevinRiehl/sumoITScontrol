@@ -1,0 +1,6 @@
+The model in this repository is a reduced version with only 5 instead of 7 signal controllers.
+For legal reasons, we can only publish this version, while for the paper a larger model was used.
+The log files are provided for the larger model.
+The demand (Spawn_Bus.csv) and (Spawn_Vehicles.csv) stayed the same.
+For details on the bus schedule, find "/data/bus_schedule".
+The calibration of vehicle demand will be described in another publication dedicated to the casestudy city.

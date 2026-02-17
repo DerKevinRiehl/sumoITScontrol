@@ -8,11 +8,6 @@ warnings.filterwarnings('ignore')
 from sumoITScontrol import RampMeter, RampMeterCoordinationGroup
 from sumoITScontrol.control.ramp_metering import METALINE
 
-
-############## CLASSES  
-
-
-
 ############## PARAMETERS
 simulation_parameters = {
     "sumo_config_file": "./demo_simulation_models/example_ramp_metering/Configuration_4.sumocfg",
