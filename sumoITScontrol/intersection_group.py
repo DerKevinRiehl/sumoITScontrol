@@ -1,26 +1,34 @@
 import traci
 from .simulation_tools import SimulationTools
 
+
 class IntersectionGroup:
-    def __init__(self, intersections, speed_limit=3.66, districts=None, critical_district_order=None, connection_between_intersections=None):
-        self.intersections = intersections  
+    def __init__(
+        self,
+        intersections,
+        speed_limit=3.66,
+        districts=None,
+        critical_district_order=None,
+        connection_between_intersections=None,
+    ):
+        self.intersections = intersections
         self.speed_limit = speed_limit
         self.districts = districts
         self.critical_district_order = critical_district_order
         self.connection_between_intersections = connection_between_intersections
-        
+
     def _init_lane_lengths(self):
         edge_ids = traci.edge.getIDList()
         for edge_id in edge_ids:
             for lane_idx in range(0, traci.edge.getLaneNumber(edge_id)):
-                lane_id = edge_id+"_"+str(lane_idx)
-                SimulationTools.get_lane_length(traci, lane_id)       
-        
+                lane_id = edge_id + "_" + str(lane_idx)
+                SimulationTools.get_lane_length(traci, lane_id)
+
     def get_intersection(self, tl_id):
         for intersection in self.intersections:
             if intersection.tl_id == tl_id:
                 return intersection
-        
+
     def apply_tl_programme(self, greentimes, offsets):
         for intersection in self.intersections:
             junction = intersection.tl_id
@@ -29,15 +37,25 @@ class IntersectionGroup:
                 continue
             phases = []
             for idx, g in enumerate(greens):
-                gstate = intersection.green_states[idx] if idx < len(intersection.green_states) else "G" * max(1, len(intersection.phases))
-                ystate = intersection.yellow_states[idx] if idx < len(intersection.yellow_states) else "y" * len(gstate)
+                gstate = (
+                    intersection.green_states[idx]
+                    if idx < len(intersection.green_states)
+                    else "G" * max(1, len(intersection.phases))
+                )
+                ystate = (
+                    intersection.yellow_states[idx]
+                    if idx < len(intersection.yellow_states)
+                    else "y" * len(gstate)
+                )
                 phases.append(traci.trafficlight.Phase(int(g), gstate))
                 phases.append(traci.trafficlight.Phase(3, ystate))
             # logic
-            logic = traci.trafficlight.Logic(programID=f"program_fixed_{junction}", 
-                                             type=traci.tc.TRAFFICLIGHT_TYPE_STATIC, 
-                                             currentPhaseIndex=0, 
-                                             phases=phases)
+            logic = traci.trafficlight.Logic(
+                programID=f"program_fixed_{junction}",
+                type=traci.tc.TRAFFICLIGHT_TYPE_STATIC,
+                currentPhaseIndex=0,
+                phases=phases,
+            )
             traci.trafficlight.setProgramLogic(junction, logic)
             # offsets
             shift = int(offsets.get(junction, 0))
@@ -59,10 +77,24 @@ class IntersectionGroup:
                 if len(greens) * 2 > 4:
                     if shift < greens[-1] + 9 + (greens[-2] if len(greens) > 1 else 0):
                         traci.trafficlight.setPhase(junction, len(greens) * 2 - 5)
-                        traci.trafficlight.setPhaseDuration(junction, shift - greens[-1] - (greens[-2] if len(greens) > 1 else 0) - 6)
-                    elif shift < greens[-1] + 9 + (greens[-2] if len(greens) > 1 else 0) + (greens[-3] if len(greens) > 2 else 0):
+                        traci.trafficlight.setPhaseDuration(
+                            junction,
+                            shift
+                            - greens[-1]
+                            - (greens[-2] if len(greens) > 1 else 0)
+                            - 6,
+                        )
+                    elif shift < greens[-1] + 9 + (
+                        greens[-2] if len(greens) > 1 else 0
+                    ) + (greens[-3] if len(greens) > 2 else 0):
                         traci.trafficlight.setPhase(junction, len(greens) * 2 - 6)
-                        traci.trafficlight.setPhaseDuration(junction, shift - greens[-1] - (greens[-2] if len(greens) > 1 else 0) - 9)
+                        traci.trafficlight.setPhaseDuration(
+                            junction,
+                            shift
+                            - greens[-1]
+                            - (greens[-2] if len(greens) > 1 else 0)
+                            - 9,
+                        )
                     else:
                         print("SCOSCA OFFSET ERROR", junction, offsets)
                 else:

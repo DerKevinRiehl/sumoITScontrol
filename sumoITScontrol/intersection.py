@@ -1,8 +1,17 @@
 import traci
 from .simulation_tools import SimulationTools
 
+
 class Intersection:
-    def __init__(self, tl_id, phases, links=None, sensors=None, green_states=None, yellow_states=None):
+    def __init__(
+        self,
+        tl_id,
+        phases,
+        links=None,
+        sensors=None,
+        green_states=None,
+        yellow_states=None,
+    ):
         self.tl_id = tl_id
         self.phases = phases
         self.links = links
@@ -13,11 +22,11 @@ class Intersection:
             self.pressure_source = "lanes"
         else:
             self.pressure_source = "sensors"
-        
+
     def set_signal_on_traffic_lights(self, phase):
         """
         This function sets trafficlight to specific phase.
-        
+
         Parameters:
         - phase: the movement phase (int)
         """
@@ -29,7 +38,7 @@ class Intersection:
         n_vehicles = {}
         for phase in self.phases:
             pressure = 0
-            if self.pressure_source=="lanes":
+            if self.pressure_source == "lanes":
                 lanes = self.links[phase]
                 # count vehicles on lanes
                 for lane in lanes:
@@ -40,7 +49,11 @@ class Intersection:
                 # count "hidden" vehicles on internal syntehtic lanes (intersections)
                 SimulationTools.determine_hidden_vehicles(traci)
                 edges = [l.split("_")[0] for l in lanes]
-                hidden_vehicles_current_edge = [element for element in SimulationTools.hidden_vehicles_current_edge if element in edges]
+                hidden_vehicles_current_edge = [
+                    element
+                    for element in SimulationTools.hidden_vehicles_current_edge
+                    if element in edges
+                ]
                 # determine pressure
                 for lane in lanes:
                     pressure += n_vehicles[lane]
@@ -53,10 +66,11 @@ class Intersection:
                     if sensor in n_vehicles:
                         continue
                     else:
-                        n_vehicles[sensor] = traci.lanearea.getLastStepVehicleNumber(sensor)
+                        n_vehicles[sensor] = traci.lanearea.getLastStepVehicleNumber(
+                            sensor
+                        )
                 # determine pressure
                 for sensor in sensors:
                     pressure += n_vehicles[sensor]
             pressures.append(pressure)
         return pressures
-    

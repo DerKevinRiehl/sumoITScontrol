@@ -1,4 +1,3 @@
-
 class RampMeterCoordinationGroup:
     def __init__(self, ramp_meters_ordered, ramp_meter_ids):
         """
@@ -36,11 +35,11 @@ class RampMeterCoordinationGroup:
 
     def get_slaves(self):
         return [self.ramp_meters[i] for i in self.slave_indices]
-    
+
     def get_master_id(self):
         if self.master_idx is None:
             return None
         return self.ramp_meter_ids[self.master_idx]
-    
+
     def get_slave_ids(self):
         return [self.ramp_meter_ids[i] for i in self.slave_indices]
