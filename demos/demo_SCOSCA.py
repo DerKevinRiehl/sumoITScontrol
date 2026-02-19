@@ -1,4 +1,10 @@
-# IMPORTS
+"""
+This demo script showcases the application of the SCOSCA (Self-COordinating SCOOT and SCATS) algorithm for adaptive traffic signal control in a SUMO simulation environment. 
+The script defines a network of five intersections, each with its own set of traffic signal phases and associated links. 
+The SCOSCA controller dynamically adjusts the green times of the traffic signals based on real-time traffic conditions, aiming to optimize traffic flow across the network.
+"""
+
+############## IMPORTS
 import traci
 from datetime import datetime
 import warnings
@@ -8,7 +14,7 @@ warnings.filterwarnings("ignore")
 from sumoITScontrol import Intersection, IntersectionGroup
 from sumoITScontrol.control.intersection_management.ScootScats import ScootScats
 
-# PARAMETERS
+############## PARAMETERS
 simulation_parameters = {
     "sumo_config_file": "./demo_simulation_models/example_intersection_management/Configuration.sumocfg",
     "duration_sec": 3600,#86400 - 32400,  # 24h - 9h

@@ -1,3 +1,9 @@
+"""
+This demo script showcases the application of the Max Pressure (Fixed) algorithm for adaptive traffic signal control in a SUMO simulation environment.
+The script defines a network of five intersections, each with its own set of traffic signal phases and associated links.
+The Max Pressure (Fixed) controller dynamically adjusts the green times of the traffic signals based on real-time traffic conditions, aiming to optimize traffic flow across the network.
+"""
+
 ############## IMPORTS
 import traci
 from datetime import datetime

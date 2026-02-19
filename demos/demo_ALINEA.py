@@ -1,3 +1,8 @@
+"""
+This demo script showcases the application of the ALINEA algorithm for adaptive ramp metering control in a SUMO simulation environment.
+The script defines a single ramp meter with its own set of mainline and queue sensors.
+"""
+
 ############## IMPORTS
 import numpy as np
 import traci

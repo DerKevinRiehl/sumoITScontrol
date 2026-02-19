@@ -1,3 +1,10 @@
+"""
+This demo script showcases the application of the METALINE algorithm for adaptive ramp metering control in a SUMO simulation environment.
+The script defines a coordination group of three ramp meters, each with its own set of mainline and queue sensors. 
+The METALINE controller dynamically adjusts the metering rates of the ramp meters based on real-time traffic conditions, 
+aiming to optimize traffic flow on the mainline while managing queue lengths on the ramps.
+"""
+
 ############## IMPORTS
 import numpy as np
 import traci

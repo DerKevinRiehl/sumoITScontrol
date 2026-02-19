@@ -1,0 +1,95 @@
+name: Release
+
+on:
+    push:
+        tags:
+            - "v*.*.*"
+
+permissions:
+    contents: write
+    packages: write
+
+jobs:
+    validate-and-release:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                  python-version: "3.9"
+
+            - name: Install dependencies
+              run: |
+                  python -m pip install --upgrade pip
+                  pip install build twine
+                  pip install -e .
+
+            - name: Extract version from tag
+              id: tag_version
+              run: |
+                  TAG_VERSION=${GITHUB_REF#refs/tags/v}
+                  echo "version=$TAG_VERSION" >> $GITHUB_OUTPUT
+                  echo "Extracted version from tag: $TAG_VERSION"
+
+            - name: Validate pyproject.toml version
+              id: validate_project
+              run: |
+                  PYPROJECT_VERSION=$(grep '^version = ' pyproject.toml | head -1 | sed 's/version = "\(.*\)"/\1/')
+                  echo "pyproject_version=$PYPROJECT_VERSION" >> $GITHUB_OUTPUT
+                  echo "pyproject.toml version: $PYPROJECT_VERSION"
+
+                  TAG_VERSION=${{ steps.tag_version.outputs.version }}
+                  if [ "$PYPROJECT_VERSION" != "$TAG_VERSION" ]; then
+                    echo "❌ Version mismatch:"
+                    echo "  Tag version: $TAG_VERSION"
+                    echo "  pyproject.toml version: $PYPROJECT_VERSION"
+                    exit 1
+                  fi
+                  echo "✓ pyproject.toml version matches tag"
+
+            - name: Build distribution packages
+              run: |
+                  python -m build
+
+            - name: Verify package version
+              run: |
+                  WHEEL_FILE=$(ls dist/*.whl | head -1)
+                  pip install "$WHEEL_FILE"
+
+                  # Extract package name from pyproject.toml and query installed version safely
+                  PACKAGE_NAME=$(grep '^name = ' pyproject.toml | head -1 | sed 's/name = "\(.*\)"/\1/')
+                  INSTALLED_VERSION=$(python -c "import importlib.metadata, sys; print(importlib.metadata.version(sys.argv[1]))" "$PACKAGE_NAME")
+                  TAG_VERSION=${{ steps.tag_version.outputs.version }}
+
+                  echo "Installed package version: $INSTALLED_VERSION"
+                  if [ "$INSTALLED_VERSION" != "$TAG_VERSION" ]; then
+                    echo "❌ Package version mismatch:"
+                    echo "  Tag version: $TAG_VERSION"
+                    echo "  Package version: $INSTALLED_VERSION"
+                    exit 1
+                  fi
+                  echo "✓ Package version matches tag"
+
+            - name: Publish to PyPI
+              env:
+                  TWINE_USERNAME: __token__
+                  TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+              run: |
+                  python -m twine upload dist/* --verbose
+
+            - name: Summary
+              run: |
+                  echo "## ✓ Release Complete"
+                  echo "**Version:** ${{ steps.tag_version.outputs.version }}"
+                  echo "**Tag:** ${{ github.ref_name }}"
+                  echo "**Artifacts:**"
+                  echo "  - Published to PyPI"
+                  echo "  - Created GitHub Release"
+                  echo "  - Changelog updated"

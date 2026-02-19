@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sumoITScontrol"
+version = "0.1.0"
+description = "Traffic Controller Collection for SUMO Traffic Simulations"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Kevin Riehl", email = "kriehl@ethz.ch" },
+  { name = "Julius Schlapbach", email = "juliussc@ethz.ch" }
+]
+
+# Runtime dependencies
+dependencies = [
+  "numpy",
+  "traci",
+  "matplotlib",
+  "tqdm",
+]
+
+[project.urls]
+Homepage = "https://github.com/kriehl/sumoITScontrol"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
