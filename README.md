@@ -48,7 +48,7 @@ It enables reproducible, variance-aware benchmarking of intelligent traffic cont
     - [Max-Pressure (Flexible-Cycle)](#max-pressure-flexible)
     - [SCOOT/SCATS](#scoot/scats)
 - [Citations](#citations)
-</details>
+</details> 
 
 
 ## Highlights
