@@ -1,0 +1,98 @@
+############## IMPORTS
+import numpy as np
+import traci
+from datetime import datetime
+import warnings
+
+warnings.filterwarnings("ignore")
+
+from sumoITScontrol import RampMeter
+from sumoITScontrol.control.ramp_metering import ALINEA
+
+import argparse
+
+
+
+
+if __name__ == "__main__":
+    ############## RUN-ARGUMENTS
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--K_P", type=int, required=True)
+    parser.add_argument("--K_I", type=int, required=True)
+    parser.add_argument("--SEED", type=int, required=True)
+    args = parser.parse_args()
+    
+    optimisation_parameters = [args.K_P, args.K_I]
+    random_seed = int(args.SEED)
+    
+    
+    ############## PARAMETERS
+    simulation_parameters = {
+        "sumo_config_file": "./demo_simulation_models/example_ramp_metering/Configuration_1.sumocfg",
+        "duration_sec": 4200,  # =3h
+        "time_step": 0.5,  # s/step
+        "start_time": datetime.strptime("07:50", "%H:%M"),
+        "sumo_random_seed": random_seed,
+    }
+    
+    # SUMO
+    SUMO_BINARY = "C:/Users/kriehl/AppData/Local/sumo-1.19.0/bin/sumo.exe"  # sumo.exe without GUI but faster # sumoBinary = "C:/Program Files (x86)/Eclipse/Sumo/bin/sumo-gui.exe"
+    SUMO_CMD = [
+        SUMO_BINARY,
+        "-c",
+        simulation_parameters["sumo_config_file"],
+        "--start",
+        "--quit-on-end",
+        "--time-to-teleport",
+        "-1",
+        "--no-warnings",           # Disable all warnings
+        "--no-step-log",           # Disable step-by-step logging
+        "--seed",
+        str(simulation_parameters["sumo_random_seed"]),
+    ]
+    
+    # DEFINE METER and CONTROLLER
+    ramp_meter = RampMeter(
+        tl_id="J0",
+        mainline_sensors=["e2_5", "e2_4"],
+        queue_sensors=["e2_0"],
+    )
+    
+    # Setup Controller
+    controller = ALINEA(
+        params={
+            "target_occupancy": 10,
+            "K_P": optimisation_parameters[0],
+            "K_I": optimisation_parameters[1],
+            "cycle_duration": 60,
+            "measurement_period": int(
+                60 / 0.5
+            ),  # int(cycle_duration / simulation.time_step)
+            "min_rate": 5,
+            "max_rate": 100,
+        },
+        ramp_meter=ramp_meter,
+    )
+    
+    # Start Sumo
+    traci.start(SUMO_CMD)
+    # Initialize
+    # Execute Simulation
+    for simulation_timestep in range(
+        0, int(simulation_parameters["duration_sec"] / simulation_parameters["time_step"])
+    ):
+        # run one step
+        traci.simulationStep()
+        current_time = traci.simulation.getCurrentTime()
+        # execute control
+        controller.execute_control(current_time)
+    # Stop Sumo
+    traci.close()
+    
+    # Evaluate
+    average_queue_length = np.nanmean(np.asarray(controller.measurement_data["queue_length_m"])[:, 1])
+    occupancies = np.asarray(controller.measurement_data["metering_occupancy"])[:, 1]
+    occupancies_clipped = np.where(occupancies < controller.params["target_occupancy"], 0, occupancies - controller.params["target_occupancy"])
+    average_occupancy_violation = np.nanmean(occupancies_clipped)
+    optimisation_function = average_queue_length + average_occupancy_violation*50
+    print(optimisation_function)

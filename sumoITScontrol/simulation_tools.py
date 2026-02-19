@@ -17,7 +17,7 @@ class SimulationTools:
         SimulationTools.sensor_list_initialized = True
 
     @staticmethod
-    def get_sensor_type(sensor_id: str) -> str | None:
+    def get_sensor_type(sensor_id):
         if sensor_id in SimulationTools.sensor_list_e1_inductionloops:
             return "inductionloop"
         if sensor_id in SimulationTools.sensor_list_e2_laneareas:

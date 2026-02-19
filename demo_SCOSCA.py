@@ -1,3 +1,4 @@
+# IMPORTS
 import traci
 from datetime import datetime
 import warnings
@@ -10,7 +11,7 @@ from sumoITScontrol.control.intersection_management.ScootScats import ScootScats
 # PARAMETERS
 simulation_parameters = {
     "sumo_config_file": "./demo_simulation_models/example_intersection_management/Configuration.sumocfg",
-    "duration_sec": 86400 - 32400,  # 24h - 9h
+    "duration_sec": 3600,#86400 - 32400,  # 24h - 9h
     "time_step": 0.25,
     "start_time": datetime.strptime("09:00", "%H:%M"),
     "sumo_random_seed": 2,
@@ -175,13 +176,13 @@ initial_greentimes = {
     "intersection5": [30, 30, 21],
 }
 scosca_params = {
-    "adaptation_cycle": 10,
-    "adaptation_green": 5,
+    "adaptation_cycle": 30,
+    "adaptation_green": 10,
     "green_thresh": 2,
     "adaptation_offset": 1,
     "offset_thresh": 0.5,
     "min_cycle_length": 50,
-    "max_cycle_length": 120,
+    "max_cycle_length": 180,
     "ds_upper_val": 0.925,
     "ds_lower_val": 0.875,
     "measurement_period": int(1 / 0.25),  # 1 / simulation_step_size
@@ -234,3 +235,149 @@ for simulation_timestep in range(
     controller.execute_control(current_time)
 # Stop Sumo
 traci.close()
+
+
+######## VISUALIZATION
+import matplotlib.pyplot as plt
+import numpy as np
+from datetime import datetime, timedelta
+import matplotlib.dates as mdates
+from collections import defaultdict
+
+def generate_spat_figure(controller, intersection_name,
+                         xlim=(20502.750402160993, 20502.75300752443)):
+    data = controller.measurement_data["history_greentimes"]
+    # Extract timestamps
+    timestamps_ms = [d[0] for d in data]
+    # Extract green times only for selected intersection
+    green_data = [d[1][intersection_name] for d in data]
+    # Determine number of phases dynamically
+    num_phases = len(green_data[0])
+    unique_phases = list(range(1, num_phases + 1))
+    # Convert timestamps to datetime
+    base_time = datetime(2026, 2, 18, 9, 0, 0)
+    timestamps_dt = [base_time + timedelta(milliseconds=ts)
+                     for ts in timestamps_ms]
+    timestamps_num = mdates.date2num(timestamps_dt)
+    # --- Build phase intervals ---
+    phase_intervals = defaultdict(list)
+    for i in range(len(data)):
+        start_time_num = timestamps_num[i]
+        green_times = green_data[i]
+        curr_time = start_time_num
+        for phase_index, green_sec in enumerate(green_times):
+            phase = phase_index + 1
+            end_time = curr_time + green_sec / (24 * 3600)
+            phase_intervals[phase].append((curr_time, end_time))
+            curr_time = end_time
+    # --- Segment builder (red/yellow/green) ---
+    def get_segments_for_phase(phase):
+        intervals = phase_intervals[phase]
+        segments = []
+        yellow_duration = 3 / (24 * 3600)
+        min_time_num = timestamps_num[0]
+        max_time_num = timestamps_num[-1] + sum(green_data[-1]) / (24 * 3600)
+        curr_time = min_time_num
+        for start, end in intervals:
+            # Red before green
+            if curr_time < start:
+                segments.append(('red', curr_time, start))
+            # Yellow before green
+            y_start = max(curr_time, start - yellow_duration)
+            y_end = start
+            if y_end > y_start:
+                segments.append(('yellow', y_start, y_end))
+            # Green
+            segments.append(('green', start, end))
+            curr_time = max(curr_time, end)
+        # Final red
+        if curr_time < max_time_num:
+            segments.append(('red', curr_time, max_time_num))
+        return segments
+    # --- Plot ---
+    fig, ax = plt.subplots(figsize=(8, 2.5))
+    for y_pos, phase in enumerate(unique_phases):
+        segments = get_segments_for_phase(phase)
+        for color, s, e in segments:
+            if e > s:
+                ax.barh(y_pos, e - s, left=s, height=0.6,
+                        color=color, edgecolor='black', linewidth=0.5)
+        ax.text(timestamps_num[0] - 0.0003, y_pos,
+                f'Phase {phase}', va='center', fontweight='bold')
+    # Axis formatting
+    max_time = timestamps_num[-1] + sum(green_data[-1]) / (24 * 3600)
+    ax.set_xlim(timestamps_num[0], max_time)
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M:%S'))
+    ax.xaxis.set_major_locator(mdates.SecondLocator(interval=30))
+    plt.setp(ax.xaxis.get_majorticklabels(), rotation=45)
+    ax.set_yticks(range(len(unique_phases)))
+    ax.set_yticklabels([f'Phase {p}' for p in unique_phases])
+    ax.set_ylim(-0.5, len(unique_phases) - 0.5)
+    if xlim is not None:
+        ax.set_xlim(*xlim)
+    ax.set_title(f'SPAT Plan - {intersection_name}')
+    fig.autofmt_xdate()
+    plt.tight_layout()
+    plt.show()
+
+def generate_schedule_figure(controller):
+    data = controller.measurement_data["history_greentimes"]
+    # Extract timestamps
+    timestamps_ms = [d[0] for d in data]
+    # Convert timestamps to datetime
+    base_time = datetime(2026, 2, 18, 9, 0, 0)
+    timestamps_dt = [base_time + timedelta(milliseconds=ts) for ts in timestamps_ms]
+    # Extract intersection names from first entry
+    intersection_names = list(data[0][1].keys())
+    n = len(intersection_names)
+    fig, axes = plt.subplots(n, 1, figsize=(8, 6), sharex=True)
+    if n == 1:
+        axes = [axes]
+    for i, intersection in enumerate(intersection_names):
+        # Extract green durations for this intersection
+        green_durations = np.array([
+            d[1][intersection] for d in data
+        ])
+        # --- Step duplication ---
+        step_times = []
+        step_values = []
+        for j in range(len(timestamps_dt) - 1):
+            step_times.append(timestamps_dt[j])
+            step_values.append(green_durations[j])
+            step_times.append(timestamps_dt[j + 1])
+            step_values.append(green_durations[j])
+        step_times.append(timestamps_dt[-1])
+        step_values.append(green_durations[-1])
+        step_values = np.array(step_values).T
+        # --- Stackplot ---
+        num_phases = green_durations.shape[1]
+        phase_labels = [f"P{p+1}" for p in range(num_phases)]
+        colors = ['green', 'blue', 'orange', 'purple', 'cyan'][:num_phases]
+        axes[i].stackplot(
+            step_times,
+            step_values,
+            labels=phase_labels,
+            colors=colors,
+            alpha=0.7
+        )
+        axes[i].set_ylabel(f"{intersection}\nGreen (s)")
+        axes[i].set_ylim(0, max(step_values.sum(axis=0)) * 1.1)
+        axes[i].legend(loc='upper left', fontsize=7)
+        # Only bottom subplot gets x-axis labels
+        if i != n - 1:
+            axes[i].tick_params(labelbottom=False)
+        else:
+            axes[i].xaxis.set_major_formatter(mdates.DateFormatter('%H:%M:%S'))
+            axes[i].xaxis.set_major_locator(mdates.SecondLocator(interval=200))
+            plt.setp(axes[i].xaxis.get_majorticklabels(), rotation=45)
+            axes[i].set_xlabel("Time")
+    plt.tight_layout()
+    plt.show()
+
+generate_spat_figure(controller, "intersection1", xlim=(20502.776855004264, 20502.7794603677))
+generate_spat_figure(controller, "intersection2", xlim=(20502.776855004264, 20502.7794603677))
+generate_spat_figure(controller, "intersection3", xlim=(20502.776855004264, 20502.7794603677))
+generate_spat_figure(controller, "intersection4", xlim=(20502.776855004264, 20502.7794603677))
+generate_spat_figure(controller, "intersection5", xlim=(20502.776855004264, 20502.7794603677))
+
+generate_schedule_figure(controller)

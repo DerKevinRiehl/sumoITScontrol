@@ -87,7 +87,7 @@ class HERO:
         # conduct hero
         skip_hero = False
         self.hero_counter += 1
-        if self.hero_counter < self.params["hero_period"]:
+        if self.hero_counter < self.params["hero_cycle_duration"]:
             skip_hero = True
         else:
             self.hero_counter = 0

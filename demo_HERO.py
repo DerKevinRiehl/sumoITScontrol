@@ -62,7 +62,7 @@ ramp_meter_group = RampMeterCoordinationGroup(
 
 controller = HERO(
     params={
-        "hero_period": 60,  # similar to ALINEA cycle duration
+        "hero_cycle_duration": 60,  # similar to ALINEA cycle duration
         "queue_activation_threshold_m": 15.0,  # master queue trigger
         "queue_release_threshold_m": 2.5,  # dissolve cluster
         "min_queue_setpoint_m": 5.0,  # for slaves
@@ -74,7 +74,6 @@ controller = HERO(
         "J12": ALINEA(
             params={
                 "target_occupancy": 10,
-                "K_R": 50,
                 "K_P": 30,
                 "K_I": 0,
                 "cycle_duration": 60,
@@ -89,7 +88,6 @@ controller = HERO(
         "J11": ALINEA(
             params={
                 "target_occupancy": 10,
-                "K_R": 50,
                 "K_P": 30,
                 "K_I": 0,
                 "cycle_duration": 60,
@@ -104,7 +102,6 @@ controller = HERO(
         "J0": ALINEA(
             params={
                 "target_occupancy": 10,
-                "K_R": 50,
                 "K_P": 30,
                 "K_I": 0,
                 "cycle_duration": 60,
@@ -120,10 +117,10 @@ controller = HERO(
 )
 
 
+######## SIMULATION
 lightsA = []
 lightsB = []
 lightsC = []
-######## SIMULATION
 # Start Sumo
 traci.start(SUMO_CMD)
 # Initialize
@@ -142,15 +139,11 @@ for simulation_timestep in range(
 # Stop Sumo
 traci.close()
 
-lightsA = [1 if str(x).startswith("G") else 0 for x in lightsA]
-lightsB = [1 if str(x).startswith("G") else 0 for x in lightsB]
-lightsC = [1 if str(x).startswith("G") else 0 for x in lightsC]
-
 
 # ######## VISUALIZATION
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(8, 3))
+plt.figure(figsize=(8, 2.75))
 plt.subplot(1, 3, 1)
 for alinea_controller_name in controller.alinea:
     alinea_controller = controller.alinea[alinea_controller_name]
@@ -191,36 +184,47 @@ plt.tight_layout()
 plt.show()
 
 
-import matplotlib.pyplot as plt
 
-plt.figure(figsize=(8, 3))
+plt.figure(figsize=(8, 2))
 
 plt.subplot(1, 3, 1)
 plt.title("J0")
 plt.plot(lightsA, label="J0")
+plt.xlabel("Simulation Time [s]")
+plt.xlim(2500,6000)
 plt.subplot(1, 3, 2)
 plt.title("J11")
 plt.plot(lightsB, label="J11")
+plt.xlabel("Simulation Time [s]")
+plt.xlim(2500,6000)
 plt.subplot(1, 3, 3)
 plt.title("J12")
 plt.plot(lightsC, label="J12")
+plt.xlabel("Simulation Time [s]")
+plt.xlim(2500,6000)
+plt.tight_layout()
+
+plt.show()
 
 
-import matplotlib.pyplot as plt
 
+
+plt.figure(figsize=(8, 2))
 time = controller.log["time"]
-
-for ramp_id, data in controller.log["ramps"].items():
-    plt.figure()
-    plt.step(time, data["queue_length"], where="post")
-    plt.title(f"Queue at {ramp_id}")
+ramp_ids = list(controller.log["ramps"].keys())[:3]  
+ramp_ids.reverse()
+for i, ramp_id in enumerate(ramp_ids, 1):
+    data = controller.log["ramps"][ramp_id]
+   
+    plt.subplot(1, 3, i)
+    plt.step(time, np.zeros(len(time)), where="post")
+    plt.title(f"Role at {ramp_id}")
     plt.xlabel("Time [s]")
-    plt.ylabel("Queue length [m]")
-
+    plt.ylim(0,20)
     for t, role in zip(time, data["role"]):
         if role == "MASTER":
             plt.axvline(t, color="r", alpha=0.1)
         elif role == "SLAVE":
             plt.axvline(t, color="b", alpha=0.05)
-
-    plt.show()
+plt.tight_layout()
+plt.show()

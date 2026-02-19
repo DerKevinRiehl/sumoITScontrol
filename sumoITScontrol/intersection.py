@@ -74,3 +74,27 @@ class Intersection:
                     pressure += n_vehicles[sensor]
             pressures.append(pressure)
         return pressures
+
+    def apply_tl_programme(self, greens, yellow_duration):
+        phases = []
+        for idx, g in enumerate(greens):
+            gstate = (
+                self.green_states[idx]
+                if idx < len(self.green_states)
+                else "G" * max(1, len(self.phases))
+            )
+            ystate = (
+                self.yellow_states[idx]
+                if idx < len(self.yellow_states)
+                else "y" * len(gstate)
+            )
+            phases.append(traci.trafficlight.Phase(int(g), gstate))
+            phases.append(traci.trafficlight.Phase(yellow_duration, ystate))
+        # logic
+        logic = traci.trafficlight.Logic(
+            programID=f"program_fixed_{self.tl_id}",
+            type=traci.tc.TRAFFICLIGHT_TYPE_STATIC,
+            currentPhaseIndex=0,
+            phases=phases,
+        )
+        traci.trafficlight.setProgramLogic(self.tl_id, logic)

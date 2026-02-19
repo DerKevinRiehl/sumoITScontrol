@@ -63,7 +63,6 @@ intersection1 = Intersection(
         ],
     },
 )
-
 intersection2 = Intersection(
     tl_id="intersection2",
     phases=[0, 2, 4],
@@ -76,7 +75,6 @@ intersection2 = Intersection(
         4: ["e2_-25973410#1", "e2_758088375#0_1", "e2_758088375#0_2"],
     },
 )
-
 intersection3 = Intersection(
     tl_id="intersection3",
     phases=[0, 2, 4],
@@ -86,13 +84,11 @@ intersection3 = Intersection(
         4: ["-758088377#1_1", "-E1_1", "-E4_1", "-E4_2"],
     },
 )
-
 intersection4 = Intersection(
     tl_id="intersection4",
     phases=[0, 2],
     links={0: ["22889927#0_1", "758088377#2_1", "-22889927#2_1"], 2: ["-25576697#0_0"]},
 )
-
 intersection5 = Intersection(
     tl_id="intersection5",
     phases=[0, 2, 4],
@@ -104,23 +100,17 @@ intersection5 = Intersection(
 )
 
 max_pressure_params = {
-    "T_A": 5,
+    "T_A": 5, # Recheck-Pressure Time (used for Max.Pressure)
     "T_L": 3,  # Yellow Time
     "G_T_MIN": 5,  # Min Greentime (used for Max. Pressure)
     "G_T_MAX": 50,  # Max Greentime (used for Max. Pressure)
     "measurement_period": int(1 / 0.25),  # int(1 / simulation.time_step)
 }
-
 controller1 = MaxPressure_Flex(params=max_pressure_params, intersection=intersection1)
-
 controller2 = MaxPressure_Flex(params=max_pressure_params, intersection=intersection2)
-
 controller3 = MaxPressure_Flex(params=max_pressure_params, intersection=intersection3)
-
 controller4 = MaxPressure_Flex(params=max_pressure_params, intersection=intersection4)
-
 controller5 = MaxPressure_Flex(params=max_pressure_params, intersection=intersection5)
-
 signal_controllers = [controller1, controller2, controller3, controller4, controller5]
 
 
@@ -140,3 +130,85 @@ for simulation_timestep in range(
         controller.execute_control(current_time)
 # Stop Sumo
 traci.close()
+
+
+######## VISUALIZATION
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from datetime import datetime, timedelta
+from collections import defaultdict
+
+def generate_spat_figure(controller, xlim=(20502.753628127983, 20502.762437095265)):
+    """
+    Generate a SPaT-like figure from history_green_phase data.
+    Args:
+        controller: controller object with .measurement_data["history_green_phase"]
+        xlim: optional tuple for x-axis limits (in matplotlib date numbers)
+    """
+    data = controller.measurement_data["history_green_phase"]
+    # Extract timestamps and phases
+    timestamps_ms = [d[0] for d in data]
+    phases = [d[1] for d in data]
+    unique_phases = sorted(set(p for p in phases ))  
+    # Convert timestamps to datetime
+    base_time = datetime(2026, 2, 18, 9, 0, 0)
+    timestamps_dt = [base_time + timedelta(milliseconds=ts) for ts in timestamps_ms]
+    timestamps_num = mdates.date2num(timestamps_dt)
+    # Compute total span
+    min_time_num = timestamps_num[0]
+    total_span_num = timestamps_num[-1] - min_time_num
+    # Build phase intervals
+    phase_intervals = defaultdict(list)
+    for i in range(len(timestamps_num)-1):
+        start, end = timestamps_num[i], timestamps_num[i+1]
+        phase_intervals[phases[i]].append((start, end))
+    # Function to generate colored segments
+    def get_segments_for_phase(phase):
+        intervals = phase_intervals.get(phase, [])
+        segments = []
+        curr_time = min_time_num
+        yellow_duration = 3 / (24*3600)  # 3 sec in matplotlib date units
+        for start, end in intervals:
+            # Red before green
+            if curr_time < start:
+                segments.append(('red', curr_time, start))
+            # Yellow transition
+            y_start = max(curr_time, start - yellow_duration)
+            y_end = start
+            if y_end > y_start:
+                segments.append(('yellow', y_start, y_end))
+            # Green active
+            segments.append(('green', start, end))
+            curr_time = max(curr_time, end)
+        # Fill remaining red
+        if curr_time < min_time_num + total_span_num:
+            segments.append(('red', curr_time, min_time_num + total_span_num))
+        return segments
+    # Plotting
+    fig, ax = plt.subplots(figsize=(10, 3))
+    y_pos = 0
+    for phase in unique_phases:
+        segments = get_segments_for_phase(phase)
+        for color, s, e in segments:
+            if e > s:
+                ax.barh(y_pos, e - s, left=s, height=0.6, color=color, edgecolor='black', linewidth=0.5)
+        ax.text(min_time_num - 0.01, y_pos, f'Phase {phase}', va='center', fontweight='bold')
+        y_pos += 1
+    # Axis formatting
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M:%S'))
+    ax.xaxis.set_major_locator(mdates.SecondLocator(interval=30))
+    plt.setp(ax.xaxis.get_majorticklabels(), rotation=45)
+    ax.set_yticks(range(len(unique_phases)))
+    ax.set_yticklabels([f'Phase {int((p+2)/2)}' for p in unique_phases])
+    ax.set_ylim(-0.5, len(unique_phases)-0.5)
+    ax.set_xlim(*xlim)
+    ax.set_title('Signal Phase And Time (SPAT) Plan - "' + controller.intersection.tl_id + '"')
+    fig.autofmt_xdate()
+    plt.tight_layout()
+    plt.show()
+
+generate_spat_figure(controller1, xlim=(20502.753628127983, 20502.762437095265))
+generate_spat_figure(controller2, xlim=(20502.753628127983, 20502.762437095265))
+generate_spat_figure(controller3, xlim=(20502.753628127983, 20502.762437095265))
+generate_spat_figure(controller4, xlim=(20502.753628127983, 20502.762437095265))
+generate_spat_figure(controller5, xlim=(20502.753628127983, 20502.762437095265))

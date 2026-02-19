@@ -2,7 +2,8 @@
 
 from sumoITScontrol import IntersectionGroup
 from sumoITScontrol import SimulationTools
-
+import math
+import copy
 
 class ScootScats:
     def __init__(
@@ -31,6 +32,9 @@ class ScootScats:
             i.tl_id: 0 for i in self.intersection_group.intersections
         }
         self.measurement_data["estimated_travel_time"] = {}
+        self.measurement_data["history_cycle_lengths"] = []
+        self.measurement_data["history_greentimes"] = []
+        self.measurement_data["history_offsets"] = []
 
     def optimize_cycle_length(self, degree_of_sat):
         """
@@ -45,6 +49,7 @@ class ScootScats:
                 + (max_ds_in_network - self.params["ds_upper_val"])
                 * self.params["adaptation_cycle"]
             )
+            new_length = int(math.ceil(new_length))
             self.measurement_data["cycle_length"] = min(
                 int(new_length), self.params["max_cycle_length"]
             )
@@ -56,6 +61,7 @@ class ScootScats:
                 - (self.params["ds_lower_val"] - max_ds_in_network)
                 * self.params["adaptation_cycle"]
             )
+            new_length = int(math.floor(new_length))
             self.measurement_data["cycle_length"] = max(
                 int(new_length), self.params["min_cycle_length"]
             )
@@ -295,7 +301,7 @@ class ScootScats:
             self.measurement_data["control_counter"] += 1
             if (
                 self.measurement_data["control_counter"]
-                == self.measurement_data["last_cycle_update"]
+                >= self.measurement_data["last_cycle_update"]
                 + self.measurement_data["cycle_length"]
             ):
                 self.measurement_data["last_cycle_update"] = self.measurement_data[
@@ -326,3 +332,6 @@ class ScootScats:
                     self.measurement_data["greentimes"],
                     self.measurement_data["offsets"],
                 )
+                self.measurement_data["history_greentimes"].append([current_time, copy.deepcopy(self.measurement_data["greentimes"])])
+                self.measurement_data["history_offsets"].append([current_time, copy.deepcopy(self.measurement_data["offsets"])])
+                self.measurement_data["history_cycle_lengths"].append([current_time, self.measurement_data["cycle_length"]])

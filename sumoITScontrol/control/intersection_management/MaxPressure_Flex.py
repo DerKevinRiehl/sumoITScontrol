@@ -17,6 +17,7 @@ class MaxPressure_Flex:
         self.measurement_data["next_signal_phase"] = -1
         self.measurement_data["current_fsm_state"] = "start"
         self.measurement_data["pressures"] = []
+        self.measurement_data["history_green_phase"] = []
 
     def execute_control(self, current_time):
         """
@@ -25,12 +26,6 @@ class MaxPressure_Flex:
         """
         self.measurement_data["counter"] += 1
         if self.measurement_data["counter"] == self.params["measurement_period"]:
-            print(
-                current_time,
-                "[" + self.intersection.tl_id + "]",
-                "Current State of Iteration:",
-                self.measurement_data["current_fsm_state"],
-            )
             self.measurement_data["counter"] = 0
             self.measurement_data["fsm_timer"] += 1
             self.measurement_data["pressures"] = (
@@ -40,11 +35,6 @@ class MaxPressure_Flex:
                 if self.measurement_data["fsm_timer"] == self.params["G_T_MIN"]:
                     self.measurement_data["current_fsm_state"] = "check_pressures"
                     self.measurement_data["fsm_timer"] = -1
-                    print(
-                        current_time,
-                        "[" + self.intersection.tl_id + "]",
-                        "Switch to 'check_pressures'",
-                    )
             elif self.measurement_data["current_fsm_state"] == "check_pressures":
                 # pressure index corresponds to green-phase index (phase/2)
                 idx = int(self.measurement_data["current_signal_phase"] / 2)
@@ -61,23 +51,8 @@ class MaxPressure_Flex:
                 if current_pressure < other_pressures:
                     self.measurement_data["current_fsm_state"] = "next_phase"
                     self.measurement_data["fsm_timer"] = -1
-                    print(
-                        current_time,
-                        "[" + self.intersection.tl_id + "]",
-                        "Switch to 'next_phase'",
-                        "as current_pressure",
-                        current_pressure,
-                        "smaller than other_pressures",
-                        other_pressures,
-                    )
                 else:
                     self.measurement_data["current_fsm_state"] = "wait"
-                    print(
-                        current_time,
-                        "[" + self.intersection.tl_id + "]",
-                        "Switch to 'wait'",
-                        "as no other phase had a greater pressure",
-                    )
                     self.measurement_data["fsm_timer"] = -1
             elif self.measurement_data["current_fsm_state"] == "wait":
                 if self.measurement_data["fsm_timer"] == self.params["T_A"]:
@@ -86,19 +61,9 @@ class MaxPressure_Flex:
                     )
                     if current_gt > self.params["G_T_MAX"]:
                         self.measurement_data["current_fsm_state"] = "next_phase"
-                        print(
-                            current_time,
-                            "[" + self.intersection.tl_id + "]",
-                            "Switch to 'next_phase'",
-                        )
                         self.measurement_data["fsm_timer"] = -1
                     else:
                         self.measurement_data["current_fsm_state"] = "check_pressures"
-                        print(
-                            current_time,
-                            "[" + self.intersection.tl_id + "]",
-                            "Switch to 'check_pressures' again",
-                        )
                         self.measurement_data["fsm_timer"] = -1
             elif self.measurement_data["current_fsm_state"] == "next_phase":
                 # pick the highest pressure among other approaches
@@ -124,14 +89,6 @@ class MaxPressure_Flex:
                     chosen = random.choice(max_indices)
                     self.measurement_data["next_signal_phase"] = int(chosen * 2)
                 # begin transition (set yellow)
-                print(
-                    current_time,
-                    "[" + self.intersection.tl_id + "]",
-                    "Switch to 'transition', as we switched from phase",
-                    self.measurement_data["current_signal_phase"],
-                    "to new phase",
-                    self.measurement_data["next_signal_phase"],
-                )
                 self.measurement_data["current_signal_phase"] += 1
                 self.measurement_data["fsm_timer"] = -1
                 self.measurement_data["current_fsm_state"] = "transition"
@@ -141,22 +98,13 @@ class MaxPressure_Flex:
                     self.measurement_data["current_signal_phase"] = (
                         self.measurement_data["next_signal_phase"]
                     )
+                    self.measurement_data["history_green_phase"].append([current_time, self.measurement_data["next_signal_phase"]])
                     self.measurement_data["next_signal_phase"] = -1
                     self.measurement_data["fsm_timer"] = -1
                     self.measurement_data["current_fsm_state"] = "start"
                     self.measurement_data["current_gt_start"] = current_time
-                    print(
-                        current_time,
-                        "[" + self.intersection.tl_id + "]",
-                        "Switch to 'start'",
-                    )
             else:
-                print(
-                    current_time,
-                    "[" + self.intersection.tl_id + "]",
-                    "WARNING UNKNOWN STATE",
-                    self.measurement_data["current_fsm_state"],
-                )
+                print("WARNING UNKNOWN STATE")
             # apply the current phase to the traffic lights
             self.intersection.set_signal_on_traffic_lights(
                 phase=int(self.measurement_data["current_signal_phase"])

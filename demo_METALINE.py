@@ -84,10 +84,10 @@ controller = METALINE(
 )
 
 
+######## SIMULATION
 lightsA = []
 lightsB = []
 lightsC = []
-######## SIMULATION
 # Start Sumo
 traci.start(SUMO_CMD)
 # Initialize
@@ -106,10 +106,6 @@ for simulation_timestep in range(
 # Stop Sumo
 traci.close()
 
-lightsA = [1 if str(x).startswith("G") else 0 for x in lightsA]
-lightsB = [1 if str(x).startswith("G") else 0 for x in lightsB]
-lightsC = [1 if str(x).startswith("G") else 0 for x in lightsC]
-
 
 # ######## VISUALIZATION
 import matplotlib.pyplot as plt
@@ -125,7 +121,6 @@ for ramp_name in controller.measurement_data.keys():
 plt.legend()
 plt.xlabel("Simulation Time [s]")
 plt.ylabel("Metering Rate [%]")
-
 plt.subplot(1, 3, 2)
 for ramp_name in controller.measurement_data.keys():
     plt.step(
@@ -136,7 +131,6 @@ for ramp_name in controller.measurement_data.keys():
 plt.legend()
 plt.xlabel("Simulation Time [s]")
 plt.ylabel("Mainline State (Occupancy [%])")
-
 plt.subplot(1, 3, 3)
 for ramp_name in controller.measurement_data.keys():
     plt.step(
@@ -147,21 +141,24 @@ for ramp_name in controller.measurement_data.keys():
 plt.legend()
 plt.xlabel("Simulation Time [s]")
 plt.ylabel("Queue State (Lenght [m])")
-
 plt.tight_layout()
 plt.show()
 
 
-import matplotlib.pyplot as plt
-
-plt.figure(figsize=(8, 3))
-
+plt.figure(figsize=(8, 2))
 plt.subplot(1, 3, 1)
 plt.title("J0")
 plt.plot(lightsA, label="J0")
+plt.xlabel("Simulation Time [s]")
+plt.xlim(3500,7000)
 plt.subplot(1, 3, 2)
 plt.title("J11")
+plt.xlim(3500,7000)
 plt.plot(lightsB, label="J11")
+plt.xlabel("Simulation Time [s]")
 plt.subplot(1, 3, 3)
 plt.title("J12")
+plt.xlim(3500,7000)
 plt.plot(lightsC, label="J12")
+plt.xlabel("Simulation Time [s]")
+plt.tight_layout()

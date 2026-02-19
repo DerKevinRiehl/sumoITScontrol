@@ -43,7 +43,6 @@ ramp_meter = RampMeter(
 controller = ALINEA(
     params={
         "target_occupancy": 10,
-        "K_R": 50,
         "K_P": 30,
         "K_I": 0,
         "cycle_duration": 60,
@@ -79,7 +78,7 @@ traci.close()
 ######## VISUALIZATION
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(8, 3))
+plt.figure(figsize=(8, 2.75))
 plt.subplot(1, 3, 1)
 plt.xlabel("Simulation Time [s]")
 plt.ylabel("Metering Rate [%]")
@@ -106,3 +105,11 @@ plt.ylabel("Queue State (Lenght [m])")
 
 plt.tight_layout()
 plt.show()
+
+
+plt.figure(figsize=(8, 2))
+plt.title("J0")
+plt.plot(lights, label="J0")
+plt.xlabel("Simulation Time [s]")
+plt.tight_layout()
+
