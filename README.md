@@ -20,6 +20,11 @@
     </center>
 </h1>
 
+[![PyPI version](https://img.shields.io/pypi/v/sumoITScontrol)](https://pypi.org/project/sumoITScontrol/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Build](https://github.com/DerKevinRiehl/sumo3Dviz/actions/workflows/build.yml/badge.svg)](https://github.com/DerKevinRiehl/sumo3Dviz/actions/workflows/build.yml)
+[![CLI](https://github.com/DerKevinRiehl/sumo3Dviz/actions/workflows/test_rendering.yml/badge.svg)](https://github.com/DerKevinRiehl/sumo3Dviz/actions/workflows/test_rendering.yml)
+
 **sumoITScontrol** is an open-source Python framework that provides a standardized collection of established traffic controllers for the SUMO simulator for signal control and freeway ramp metering algorithms. 
 It enables reproducible, variance-aware benchmarking of intelligent traffic control methods through consistent implementations and rigorous evaluation practices.
 
