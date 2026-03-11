@@ -1,4 +1,7 @@
-# sumoITScontrol/control/ramp_metering/METALINE.py
+"""sumoITScontrol: Traffic Controller Collection for SUMO Traffic Simulations [2026]
+Authors: Kevin Riehl <kriehl@ethz.ch>
+Organisation: ETH Zürich, Institute for Transport Planning and Systems (IVT)
+"""
 
 import numpy as np
 
