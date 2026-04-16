@@ -116,5 +116,6 @@ plt.figure(figsize=(8, 2))
 plt.title("J0")
 plt.plot(lights, label="J0")
 plt.xlabel("Simulation Time [s]")
+plt.ylabel("LSA Phases")
 plt.tight_layout()
 
